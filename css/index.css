@@ -1,0 +1,29 @@
+#inscri{
+    background-image:linear-gradient(yellow 0,#fbc801 100%);
+}
+
+#connect{
+    background-image:linear-gradient(yellow 0,#fbc801 100%);
+}
+
+#bodyCenter{
+    align-items:center;
+}
+
+#connection{
+    color:red;
+    text-decoration:underline;
+}
+
+#connection:hover{
+    color:darkred;
+}
+
+#cont1{
+    width:20%;
+}
+
+#cont2{
+    display:none;
+    width:20%;
+}
