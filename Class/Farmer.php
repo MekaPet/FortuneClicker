@@ -41,6 +41,14 @@ class Farmer
      */
     private $urlImage;
 
+
+
+
+    function __construct($id)
+    {
+        $this->id = $id;
+    }
+
 ////////////////////////
 //////// Getter ////////
 ////////////////////////
@@ -162,6 +170,7 @@ class Farmer
     {
         $this->urlImage = $urlImage;
     }
+
 
 
 
