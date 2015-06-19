@@ -6,7 +6,7 @@
  * Time: 11:30
  */
 
-class database
+class Database
 {
 
     /**
@@ -67,14 +67,12 @@ class database
         try
         {
             $this->PDO = new PDO($this->server['host'], $this->server['username'], $this->server['password']);
-            echo "<br   />construct ";
-            var_dump(self::$DatabaseInstance);
         }
         catch (PDOException $e)
         {
             die("PDO CONNECTION ERROR: " . $e->getMessage() . "<br/>");
         }
-        $this->server = array();
+        //$this->server = array();
     }
 
 
@@ -141,4 +139,25 @@ class database
         }
     }
 
+    /*
+     *
+     */
+    static function getFarmer($id)
+    {
+        if(!isempty(self::$PDO))
+        {
+            self::getInstance();
+        }
+        $requete = self::$PDO->prepare('SELECT fl.Designation, fl.Name
+                                        FROM farmer_lang fl
+                                        WHERE fl.id_Farmer = ?');
+        $requete->exec(array($id));
+        $result = $requete->fetchColumn();
+
+        $farmer =  new Farmer(($id));
+        $farmer->setName($result['Name']);
+        $farmer->setDescription($result['Designation']);
+    }
+    // flvl.Cost, flvl.GoldPerTick, flvl.Cost
+//JOIN farmerlevel flvl on f.id_Farmer = flvl.id_Farmer
 }
