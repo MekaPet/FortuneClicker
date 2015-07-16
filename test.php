@@ -8,5 +8,5 @@ include_once 'Class/Database.php';
  * Time: 11:51
  */
 
-$farmer = Database::getFarmer(1);
-var_dump($farmer);
+//Pour créer un farmer
+$farmer = Database::getNewFarmer(1);

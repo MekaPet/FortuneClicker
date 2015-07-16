@@ -5,7 +5,7 @@
  * Date: 19/06/2015
  * Time: 11:30
  */
-
+include_once 'Farmer.php';
 class Database
 {
 
@@ -49,7 +49,7 @@ class Database
         //var_dump($_SERVER);
         if ($_SERVER['HTTP_HOST'] == "localhost"){
             $this->server = array(
-                'host' => "mysql:host=localhost;dbname=fortuneClicker",
+                'host' => "mysql:host=localhost;dbname=fortuneClickerV2",
                 'username' => 'root' ,
                 'password' => ''
             );
@@ -70,10 +70,10 @@ class Database
         }
         catch (PDOException $e)
         {
+            print_r($e);
             die("PDO CONNECTION ERROR: " . $e->getMessage() . "<br/>");
         }
-        var_dump($this->PDO);
-        //$this->server = array();
+        $this->server = array();
     }
 
 
@@ -143,22 +143,36 @@ class Database
     /*
      *
      */
-    static function getFarmer($id)
+    static function getNewFarmer($id)
     {
-        if($this->$PDO == null)
+        if(Database::getInstance()->PDO == null)
         {
-            $this->getInstance();
+            Database::getInstance();
         }
-        var_dump(self::$PDO);
-        $requete = self::$PDO->prepare('SELECT fl.Designation, fl.Name
-                                        FROM farmer_lang fl
-                                        WHERE fl.id_Farmer = ?');
-        $requete->exec(array($id));
-        $result = $requete->fetchColumn();
+        $pdo = Database::getInstance()->PDO;
 
-        $farmer =  new Farmer(($id));
-        $farmer->setName($result['Name']);
-        $farmer->setDescription($result['Designation']);
+        $requete = $pdo->prepare('SELECT fl.Name, fl.Designation, flvl.cost, flvl.goldPerTick
+                                  FROM farmer_lang fl
+                                  JOIN farmer_level flvl ON fl.id_Farmer = flvl.id_farmer
+                                  WHERE fl.id_Farmer = ? AND id_lang = ?' );
+
+        var_dump($requete);
+        $requete->execute(array($id, 1));
+        $result = $requete->fetch();
+
+        if (null != $result){
+            $farmer =  new Farmer(($id));
+            $farmer->setName($result['Name']);
+            $farmer->setDescription($result['Designation']);
+            $farmer->setLevel(1);
+            $farmer->setCost($result['cost']);
+            $farmer->setProcPerInstance($result['goldPerTick']);
+            $farmer->getNumber(0);
+
+            var_dump($farmer);
+        }
+
+
     }
     // flvl.Cost, flvl.GoldPerTick, flvl.Cost
 //JOIN farmerlevel flvl on f.id_Farmer = flvl.id_Farmer
