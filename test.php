@@ -9,4 +9,4 @@ include_once 'Class/Database.php';
  */
 
 $farmer = Database::getFarmer(1);
-var_dump($bdd);
+var_dump($farmer);

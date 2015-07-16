@@ -72,6 +72,7 @@ class Database
         {
             die("PDO CONNECTION ERROR: " . $e->getMessage() . "<br/>");
         }
+        var_dump($this->PDO);
         //$this->server = array();
     }
 
@@ -144,10 +145,11 @@ class Database
      */
     static function getFarmer($id)
     {
-        if(!isempty(self::$PDO))
+        if($this->$PDO == null)
         {
-            self::getInstance();
+            $this->getInstance();
         }
+        var_dump(self::$PDO);
         $requete = self::$PDO->prepare('SELECT fl.Designation, fl.Name
                                         FROM farmer_lang fl
                                         WHERE fl.id_Farmer = ?');
