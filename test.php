@@ -24,3 +24,4 @@ var_dump(Database::userAllreadyExist("kedorev@gmail.com"));
 Database::addNewUser("toto@gmail.com","azerty","azerty");
 
 var_dump(Cryptage::encrypt("test"));
+var_dump(Database::getUpgrade(1));

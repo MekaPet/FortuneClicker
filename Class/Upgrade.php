@@ -31,16 +31,23 @@ class Upgrade
     /*
      * Effect of upgrade on farmer
      */
-    private $effect;
+    private $effect_value;
 
-    function __construct($id, $name, $description, $cost, $id_farmer, $effect)
+    /*
+     * Effect type on the farmer
+     */
+    private $effect_type;
+
+    function __construct($id, $id_farmer)
     {
+        $upgrade = Database::getUpgrade($id);
         $this->id = $id;
-        $this->name = $name;
-        $this->description = $description;
-        $this->cost = $cost;
+        $this->name =$upgrade['name'];
+        $this->description = $upgrade['description'];
+        $this->cost = $upgrade['cost'];
         $this->id_farmer = $id_farmer;
-        $this->effect = $effect;
+        $this->effect_value = $upgrade['value_effect'];
+
     }
 
     /**
@@ -126,18 +133,32 @@ class Upgrade
     /**
      * @return mixed
      */
-    public function getEffect()
+    public function getEffectValue()
     {
-        return $this->effect;
+        return $this->effect_value;
     }
 
     /**
      * @param mixed $effect
      */
-    public function setEffect($effect)
+    public function setEffectValue($effect)
     {
-        $this->effect = $effect;
+        $this->effect_value = $effect;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEffectType()
+    {
+        return $this->effect_type;
+    }
 
+    /**
+     * @param mixed $effect
+     */
+    public function setEffectType($effect)
+    {
+        $this->effect_type = $effect;
+    }
 }

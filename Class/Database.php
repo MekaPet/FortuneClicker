@@ -77,7 +77,14 @@ class Database
         $this->server = array();
     }
 
-
+    static function getPDO()
+    {
+        if(Database::getInstance()->PDO == null)
+        {
+            Database::getInstance();
+        }
+        return Database::getInstance()->PDO;
+    }
 
 
     /**
@@ -208,5 +215,20 @@ class Database
         $requete = $pdo->prepare('INSERT INTO user (mail, pseudo, password)
                                   VALUE (?,?,?)');
         $requete->execute(array($mail, $pseudo, $password));
+    }
+
+    static function getUpgrade($id)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare('SELECT u.value_effect, e.effect as type_effet, ul.description, ul.name, u.cost
+                                    FROM upgrade u
+                                    JOIN effect_type e ON e.id_effect_type = u.type_effect
+                                    JOIN upgrade_lang ul ON ul.id_upgrade = u.id_upgrade
+                                    WHERE ul.id_lang  = 1
+                                      AND ul.id_upgrade = ?
+                                    ');
+        $requete->execute(array($id));
+        var_dump($requete);
+        return $requete->fetch();
     }
 }
