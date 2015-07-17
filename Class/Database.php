@@ -94,29 +94,6 @@ class Database
         return self::$DatabaseInstance;
     }
 
-
-    /*
-     * Retourne un utilisateur
-     * @var $password
-     * @return  l'instance du user
-     */
-    static function getUser($identifiant, $password)
-    {
-        if(!isempty(self::$PDO) && login($identifiant,$password))
-        {
-            $requete = self::$PDO->prepare('SELECT * FROM user WHERE identifiant = ?');
-            $requete->exec(array($identifiant));
-            $result = $requete->fetchColumn();
-
-            $_SESSION['User'] = new User($result('identifiant'), $result('mail'), $result('firstname'),$result('lastname'),$result('isAdmin') );
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
     /*
     *  Retourne si l'utilisateur a saisie les informations adéquates pour se connecter.
     *
@@ -168,8 +145,13 @@ class Database
             $farmer->setCost($result['cost']);
             $farmer->setProcPerInstance($result['goldPerTick']);
             $farmer->getNumber(0);
+            return $farmer;
         }
-        return $farmer;
+        else
+        {
+            return null;
+        }
+
     }
 
     /*
@@ -189,5 +171,42 @@ class Database
         $requete->execute(array($id, $level));
         $result = $requete->fetch();
         return $result;
+    }
+
+    /*
+     * Check if user allready exist
+     */
+    static function userAllreadyExist($mail)
+    {
+        if(Database::getInstance()->PDO == null)
+        {
+            Database::getInstance();
+        }
+        $pdo = Database::getInstance()->PDO;
+        $requete = $pdo->prepare('SELECT count(mail)
+                                  FROM user
+                                  WHERE mail = ?' );
+        $requete->execute(array($mail));
+        $result = $requete->fetchColumn();
+        if ($result == 0 )
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    static function addNewUser($mail,$pseudo, $password)
+    {
+        if(Database::getInstance()->PDO == null)
+        {
+            Database::getInstance();
+        }
+        $pdo = Database::getInstance()->PDO;
+        $requete = $pdo->prepare('INSERT INTO user (mail, pseudo, password)
+                                  VALUE (?,?,?)');
+        $requete->execute(array($mail, $pseudo, $password));
     }
 }
