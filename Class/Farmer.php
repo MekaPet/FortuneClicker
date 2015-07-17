@@ -171,6 +171,43 @@ class Farmer
         $this->urlImage = $urlImage;
     }
 
+    public function update()
+    {
+        $this->setLevel($this->getLevel() +1);
+        $data = Database::getFarmerLevel($this->getId(), $this->getLevel());
+        $this->setCost($data['cost']);
+        $this->setProcPerInstance($data['goldPerTick']);
+    }
 
+    /*
+     * Permet d'augmenter le nombre du farmer de 1
+     */
+    public function add1Farmer()
+    {
+        $this->setNumber($this->getNumber()+1);
+    }
 
+    /*
+     * Fonction en dev : non utilisable pour le moment
+     */
+    public function add10Farmer()
+    {
+        $this->setNumber($this->getNumber()+10);
+    }
+
+    /*
+     * Fonction en dev : non utilisable pour le moment
+     */
+    public function add100Farmer()
+    {
+        $this->setNumber($this->getNumber()+100);
+    }
+
+    /*
+     * Retourne le nombre de gold par seconde que le farmer génère sans les bonus.
+     */
+    public function goldPerSecondWithoutUpgrade()
+    {
+        return ($this->getNumber() * Tool::stringToNumber($this->getProcPerInstance()));
+    }
 }

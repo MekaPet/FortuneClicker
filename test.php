@@ -10,3 +10,10 @@ include_once 'Class/Database.php';
 
 //Pour créer un farmer
 $farmer = Database::getNewFarmer(1);
+//Pour monter de niveau un farmer.
+$farmer->update();
+//Pour ajouter un farmer
+$farmer->add1Farmer();
+$farmer->add1Farmer();
+$farmer->update();
+$farmer->goldPerSecondWithoutUpgrade();

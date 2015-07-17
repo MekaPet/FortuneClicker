@@ -6,6 +6,7 @@
  * Time: 11:30
  */
 include_once 'Farmer.php';
+include_once 'Tool.php';
 class Database
 {
 
@@ -141,7 +142,7 @@ class Database
     }
 
     /*
-     *
+     * Recupère les informations pour créer une nouvelle instance du farmer.
      */
     static function getNewFarmer($id)
     {
@@ -156,7 +157,6 @@ class Database
                                   JOIN farmer_level flvl ON fl.id_Farmer = flvl.id_farmer
                                   WHERE fl.id_Farmer = ? AND id_lang = ?' );
 
-        var_dump($requete);
         $requete->execute(array($id, 1));
         $result = $requete->fetch();
 
@@ -168,12 +168,26 @@ class Database
             $farmer->setCost($result['cost']);
             $farmer->setProcPerInstance($result['goldPerTick']);
             $farmer->getNumber(0);
-
-            var_dump($farmer);
         }
-
-
+        return $farmer;
     }
-    // flvl.Cost, flvl.GoldPerTick, flvl.Cost
-//JOIN farmerlevel flvl on f.id_Farmer = flvl.id_Farmer
+
+    /*
+     * Récupère les informations necessaire au lvlup du farmer
+     */
+    static function getFarmerLevel($id,$level)
+    {
+        if(Database::getInstance()->PDO == null)
+        {
+            Database::getInstance();
+        }
+        $pdo = Database::getInstance()->PDO;
+
+        $requete = $pdo->prepare('SELECT flvl.cost, flvl.goldPerTick
+                                  FROM farmer_level flvl
+                                  WHERE flvl.id_Farmer = ? AND flvl.Level = ?' );
+        $requete->execute(array($id, $level));
+        $result = $requete->fetch();
+        return $result;
+    }
 }
