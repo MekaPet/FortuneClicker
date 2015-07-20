@@ -205,22 +205,43 @@ class Database
         }
     }
 
-    static function addNewUser($mail,$pseudo, $password)
+    static function getUserIdName($mail)
     {
         if(Database::getInstance()->PDO == null)
         {
             Database::getInstance();
         }
         $pdo = Database::getInstance()->PDO;
+        $requete = $pdo->prepare('SELECT pseudo, id_user
+                                  FROM user
+                                  WHERE mail = ?' );
+        $requete->execute(array($mail));
+        return $requete->fetch();
+    }
+
+    static function addNewUser($mail,$pseudo, $password)
+    {
+        $pdo = Database::getPDO();
         $requete = $pdo->prepare('INSERT INTO user (mail, pseudo, password)
                                   VALUE (?,?,?)');
         $requete->execute(array($mail, $pseudo, $password));
     }
 
+    static function getPassword($mail)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare('SELECT password FROM user WHERE mail = ?');
+        $requete->execute(array($mail));
+        $result = $requete->fetch();
+        return $result['password'];
+    }
+
+
+
     static function getUpgrade($id)
     {
         $pdo = Database::getPDO();
-        $requete = $pdo->prepare('SELECT u.value_effect, e.effect as type_effet, ul.description, ul.name, u.cost
+        $requete = $pdo->prepare('SELECT u.value_effect, e.effect as type_effet, ul.description, ul.name, u.cost, u.id_farmer
                                     FROM upgrade u
                                     JOIN effect_type e ON e.id_effect_type = u.type_effect
                                     JOIN upgrade_lang ul ON ul.id_upgrade = u.id_upgrade
@@ -228,7 +249,17 @@ class Database
                                       AND ul.id_upgrade = ?
                                     ');
         $requete->execute(array($id));
-        var_dump($requete);
         return $requete->fetch();
+    }
+
+    static function getAllUpdateForFarmer($id_farmer)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare('SELECT u.id_upgrade, u.type_effect
+                                    FROM upgrade u
+                                    WHERE u.id_farmer = ?
+                                    ');
+        $requete->execute(array($id_farmer));
+        return $requete->fetchAll();
     }
 }

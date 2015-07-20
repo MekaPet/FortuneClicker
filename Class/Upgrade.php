@@ -38,16 +38,16 @@ class Upgrade
      */
     private $effect_type;
 
-    function __construct($id, $id_farmer)
+    function __construct($id)
     {
         $upgrade = Database::getUpgrade($id);
         $this->id = $id;
         $this->name =$upgrade['name'];
         $this->description = $upgrade['description'];
         $this->cost = $upgrade['cost'];
-        $this->id_farmer = $id_farmer;
+        $this->id_farmer = $upgrade['id_farmer'];
         $this->effect_value = $upgrade['value_effect'];
-
+        $this->effect_type = $upgrade['type_effet'];
     }
 
     /**
@@ -161,4 +161,6 @@ class Upgrade
     {
         $this->effect_type = $effect;
     }
+
+
 }

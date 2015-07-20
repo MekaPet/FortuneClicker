@@ -210,4 +210,26 @@ class Farmer
     {
         return ($this->getNumber() * Tool::stringToNumber($this->getProcPerInstance()));
     }
+
+
+    public function getProcWithUpgrade()
+    {
+        $result = Tool::stringToNumber($this->getProcPerInstance());
+        $multiple = 1.0;
+        $upgradeListe = Database::getAllUpdateForFarmer($this->getId());
+        for( $i = count($upgradeListe)-1; $i>= 0; $i--)
+        {
+            if ($upgradeListe[$i]['type_effect'] == 1)
+            {
+                $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
+                $result = $result + Tool::stringToNumber($upgrade['value_effect']);
+            }
+            else if ($upgradeListe[$i]['type_effect'] == 2)
+            {
+                $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
+                $multiple = $upgrade['value_effect'] * $multiple;
+            }
+        }
+        return $result * $multiple * $this->getNumber();
+    }
 }

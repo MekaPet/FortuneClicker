@@ -23,32 +23,18 @@ class User
     private $pseudo;
 
     /*
-     * farmer d'id 1
+     * tableau de farmer
      */
-    private $farmer_1;
+    private $farmerList;
 
     /*
-     * farmer d'id 2
+     * Tableau d'upgrade
      */
-    private $farmer_2;
-
-    /*
-     * farmer d'id 3
-     */
-    private $farmer_3;
-
-    /*
-     * farmer d'id 4
-     */
-    private $farmer_4;
+    private $upgradeList;
 
     function __construct($pseudo, $id)
     {
         $this->pseudo = $pseudo;
-        $this->farmer_1 = Database::getNewFarmer(1);
-        $this->farmer_2 = Database::getNewFarmer(2);
-        $this->farmer_3 = Database::getNewFarmer(3);
-        $this->farmer_4 = Database::getNewFarmer(4);
         $this->id = $id;
     }
 
@@ -104,67 +90,23 @@ class User
     /**
      * @return mixed
      */
-    public function getFarmer1()
+    public function getFarmer($i)
     {
-        return $this->farmer_1;
+        return $this->farmerList[$i];
     }
 
     /**
      * @param mixed $farmer_1
      */
-    public function setFarmer1($farmer_1)
+    public function setFarmer($i,$farmer_1)
     {
-        $this->farmer_1 = $farmer_1;
+        $this->farmerList[$i] = $farmer_1;
     }
 
-    /**
-     * @return mixed
+    /*
+     * Enregistre l'utilisateur s'il n'est pas déjà présent ( email )
+     * ! le password placé en paramètre doit être crypter à l'aide de Cryptage !
      */
-    public function getFarmer2()
-    {
-        return $this->farmer_2;
-    }
-
-    /**
-     * @param mixed $farmer_2
-     */
-    public function setFarmer2($farmer_2)
-    {
-        $this->farmer_2 = $farmer_2;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFarmer3()
-    {
-        return $this->farmer_3;
-    }
-
-    /**
-     * @param mixed $farmer_3
-     */
-    public function setFarmer3($farmer_3)
-    {
-        $this->farmer_3 = $farmer_3;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFarmer4()
-    {
-        return $this->farmer_4;
-    }
-
-    /**
-     * @param mixed $farmer_4
-     */
-    public function setFarmer4($farmer_4)
-    {
-        $this->farmer_4 = $farmer_4;
-    }
-
     static function registerUser($pseudo, $password, $mail)
     {
         if(Database::userAllreadyExist($mail))
@@ -173,7 +115,57 @@ class User
         }
         else
         {
-
+            Database::addNewUser($mail,$pseudo,$password);
         }
     }
+
+    static function login($mail, $password)
+    {
+        if(Database::userAllreadyExist($mail))
+        {
+            if(Database::getPassword($mail) == $password)
+            {
+                $data = Database::getUserIdName($mail);
+                $user = new User($data['pseudo'],$data['id_user']);
+                $user->setAuthentified(true);
+                return $user;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public function addNewFarmerToPlayer($id_farmer)
+    {
+        if (!isset($this->farmerList[$id_farmer]))
+        {
+            $this->farmerList[$id_farmer] = Database::getNewFarmer($id_farmer);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public function addNewUpgradeToPlayer($id_upgrade)
+    {
+        if (!isset($this->upgradeList[$id_upgrade]))
+        {
+            $this->upgradeList[$id_upgrade] = new Upgrade($id_upgrade);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
 }

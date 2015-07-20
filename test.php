@@ -17,11 +17,21 @@ $farmer->add1Farmer();
 $farmer->add1Farmer();
 $farmer->update();
 $farmer->goldPerSecondWithoutUpgrade();
-var_dump($farmer);
-$user = new User("kedorev",4);
-var_dump($user);
+//var_dump($farmer);
+//var_dump($user);
 var_dump(Database::userAllreadyExist("kedorev@gmail.com"));
-Database::addNewUser("toto@gmail.com","azerty","azerty");
 
 var_dump(Cryptage::encrypt("test"));
 var_dump(Database::getUpgrade(1));
+
+$user = User::login("kedorev@gmail.com",Cryptage::encrypt("azerty"));
+
+$user->addNewFarmerToPlayer(1);
+$user->addNewUpgradeToPlayer(1);
+var_dump($user);
+
+var_dump($farmer);
+var_dump($farmer->getProcWithUpgrade());
+$farmer->add1Farmer();
+var_dump($farmer->getProcWithUpgrade());
+$farmer->add1Farmer();
