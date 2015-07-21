@@ -179,12 +179,25 @@ class Farmer
         $this->setProcPerInstance($data['goldPerTick']);
     }
 
+    public function addFarmer($i)
+    {
+        $number = $this->getNumber();
+        if(isset($number))
+        {
+            $this->setNumber($number + $i);
+        }
+        else
+        {
+            $this->setNumber($i);
+        }
+    }
+
     /*
      * Permet d'augmenter le nombre du farmer de 1
      */
     public function add1Farmer()
     {
-        $this->setNumber($this->getNumber()+1);
+        $this->addFarmer(1);
     }
 
     /*
@@ -192,7 +205,7 @@ class Farmer
      */
     public function add10Farmer()
     {
-        $this->setNumber($this->getNumber()+10);
+        $this->addFarmer(10);
     }
 
     /*
@@ -200,7 +213,7 @@ class Farmer
      */
     public function add100Farmer()
     {
-        $this->setNumber($this->getNumber()+100);
+        $this->addFarmer(100);
     }
 
     /*
@@ -212,24 +225,26 @@ class Farmer
     }
 
 
-    public function getProcWithUpgrade()
+    public function getProcWithUpgrade($user)
     {
         $result = Tool::stringToNumber($this->getProcPerInstance());
         $multiple = 1.0;
         $upgradeListe = Database::getAllUpdateForFarmer($this->getId());
         for( $i = count($upgradeListe)-1; $i>= 0; $i--)
         {
-            if ($upgradeListe[$i]['type_effect'] == 1)
+            if($user->hasUpgrade($upgradeListe[$i]['id_upgrade']))
             {
-                $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
-                $result = $result + Tool::stringToNumber($upgrade['value_effect']);
-            }
-            else if ($upgradeListe[$i]['type_effect'] == 2)
-            {
-                $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
-                $multiple = $upgrade['value_effect'] * $multiple;
+
+                if ($upgradeListe[$i]['effect'] ==  "+") {
+                    $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
+                    $result = $result + Tool::stringToNumber($upgrade['value_effect']);
+                } else if ($upgradeListe[$i]['effect'] == "*") {
+                    $upgrade = Database::getUpgrade($upgradeListe[$i]['id_upgrade']);
+                    $multiple = $upgrade['value_effect'] * $multiple;
+                }
             }
         }
+        ;
         return $result * $multiple * $this->getNumber();
     }
 }

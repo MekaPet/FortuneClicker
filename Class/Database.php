@@ -255,8 +255,9 @@ class Database
     static function getAllUpdateForFarmer($id_farmer)
     {
         $pdo = Database::getPDO();
-        $requete = $pdo->prepare('SELECT u.id_upgrade, u.type_effect
+        $requete = $pdo->prepare('SELECT u.id_upgrade, et.effect
                                     FROM upgrade u
+                                    JOIN effect_type et ON et.id_effect_type = u.type_effect
                                     WHERE u.id_farmer = ?
                                     ');
         $requete->execute(array($id_farmer));

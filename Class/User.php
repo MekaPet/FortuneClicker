@@ -145,7 +145,8 @@ class User
     {
         if (!isset($this->farmerList[$id_farmer]))
         {
-            $this->farmerList[$id_farmer] = Database::getNewFarmer($id_farmer);
+            $count = count($this->farmerList);
+            $this->farmerList[$count] = Database::getNewFarmer($id_farmer);
             return true;
         }
         else
@@ -158,7 +159,8 @@ class User
     {
         if (!isset($this->upgradeList[$id_upgrade]))
         {
-            $this->upgradeList[$id_upgrade] = new Upgrade($id_upgrade);
+            $count = count($this->upgradeList);
+            $this->upgradeList[$count] = new Upgrade($id_upgrade);
             return true;
         }
         else
@@ -167,5 +169,25 @@ class User
         }
     }
 
+    public function hasUpgrade($id_upgrade)
+    {
+        for($i = count($this->upgradeList)-1;$i>=0;$i--)
+        {
+            if($this->upgradeList[$i]->getId() == $id_upgrade)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
+    public function getAllProcPerInstance()
+    {
+        $result =0;
+        for ($i = count($this->farmerList)-1;$i>=0;$i--)
+        {
+            $result += $this->farmerList[$i]->getProcWithUpgrade($this);
+        }
+        return $result;
+    }
 }
