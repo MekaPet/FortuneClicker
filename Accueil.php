@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
-    <script src="js/Jquery24.min.js" ></script>
+    <script src="js/JQuery.js" ></script>
     <script src="js/index.js" ></script>
 </head>
 <body>

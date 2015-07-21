@@ -1,38 +1,76 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $dbname = "responsive";
-
-try{
-
-    $cowin = new PDO("mysql:host=$host; dbname=$dbname", $user, $password);
-}catch(PDOException $erreur){
-    echo "erreur : " .$erreur->getMessage();
-}
-
-if(isset($_POST['pass']) && isset($_POST['name']))
-{
-    $mdpUser = $_POST['pass'];
-    $test = 0;
-    $logUser = $_POST["name"];
-
-
-    $resultat = $cowin->query("SELECT * FROM login WHERE log ='" .$logUser."'");
-    $test = $resultat->fetch();
-
-    if ($test) {
-        echo "l'emai existe déjà \n";
-    }
-    else {
-        // existe pas
-        $sql = $cowin->prepare('INSERT INTO login (log, mdp) VALUES (?, ?)');
-        $sql->execute(array($logUser, $mdpUser));
-
-    }
-}
-
-echo "Login : " . $_POST["name"] . "\n";
-echo "Mot de passe : " . $_POST["pass"];
-$cowin = NULL;
+    include 'Include/header.php'
 ?>
+    <script src="Js/login.js" ></script>
+</head>
+<body id="body">
+
+<div id="contener">
+
+    <div id="modal">
+        <div id="start">
+            <table>
+                <thead height="40 px">
+                    <tr >
+                        <td class="white_text">
+                            S'identifier
+                        </td>
+                        <td class="white_border_left">
+
+                        </td>
+                        <td class="white_text">
+                            S'enregistrer
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table >
+                                <tr>
+                                    <td><input id="mail" type="text" name="Mail" placeholder="email"/></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="Password" type="text" name="Password" placeholder="Password"/></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="Login" type="button" value="Login"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="white_border_left">
+
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td><input id="nameRegistration" type="text" placeholder="User Name"/></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="PasswordRegistration" type="text" placeholder="Password"/></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="PasswordRegistrationVerif" type="text" placeholder="Confirm password"/></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="EmailRegistration" type="text" placeholder="Email"/></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input id="NewAccount" type="button" value="NewAccount"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+
+        </div>
+        </table>
+    </div>
+
+
+    <div id="BadLoggin">
+    </div>
+</div>
+</body>
+</html>
