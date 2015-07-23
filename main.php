@@ -8,12 +8,8 @@
 
 
 
-
+    include 'Include/checkLog.php';
     include 'Include/header.php';
-    if( !isset($_SESSION) )
-    {
-        header('Location: login.php');
-    }
 ?>
 
     <body>

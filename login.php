@@ -1,5 +1,10 @@
 <?php
-    include 'Include/header.php'
+    include 'Include/header.php';
+    if(isset($_SESSION['user']))
+    {
+        header("Location: main.php");
+    }
+var_dump($_SERVER);
 ?>
     <script src="Js/login.js" ></script>
 </head>

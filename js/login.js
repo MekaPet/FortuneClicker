@@ -12,8 +12,6 @@ $(document ).ready(function() {
 
 function login()
 {
-    console.log($("#mail").val());
-    console.log($("#Password").val());
     $.post("AJAX/login.php",{mail: $("#mail").val(), password: $("#Password").val()},function(data)
     {
         console.log(data);

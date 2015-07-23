@@ -19,8 +19,16 @@ if(isset($_POST['mail']))
     if (isset($_POST['password']))
     {
         $password = Cryptage::encrypt($_POST['password']);
-        $user = (User::login($mail,$password));
-        echo 1;
+        $user = User::login($mail,$password);
+        if($user == false)
+        {
+            echo 0;
+        }
+        else
+        {
+            $_SESSION['user'] = $user;
+            echo 1;
+        }
     }
     else
     {
