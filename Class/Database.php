@@ -5,8 +5,12 @@
  * Date: 19/06/2015
  * Time: 11:30
  */
-include_once 'Farmer.php';
-include_once 'Tool.php';
+
+/**
+ * Class Database
+ * All request is define here.
+ * The pdo couldn't be access from external.
+ */
 class Database
 {
 
@@ -37,6 +41,9 @@ class Database
      * @access private
      */
     private $server = null;
+    /**
+     * @var null|PDO
+     */
     private $PDO = null;
 
 
@@ -77,7 +84,10 @@ class Database
         $this->server = array();
     }
 
-    static function getPDO()
+    /**
+     * @return mixed
+     */
+    private static function getPDO()
     {
         if(Database::getInstance()->PDO == null)
         {
@@ -101,13 +111,13 @@ class Database
         return self::$DatabaseInstance;
     }
 
-    /*
-    *  Retourne si l'utilisateur a saisie les informations adéquates pour se connecter.
-    *
-    * @var $identifiant, $password
-    * @acces public
-    * @return boolean
-    */
+
+    /**
+     * Retourne si l'utilisateur a saisie les informations adéquates pour se connecter.
+     * @param $identifiant
+     * @param $password
+     * @return bool
+     */
     function canLogin($identifiant,$password)
     {
 
@@ -125,8 +135,11 @@ class Database
         }
     }
 
-    /*
+
+    /**
      * Recupère les informations pour créer une nouvelle instance du farmer.
+     * @param $id
+     * @return Farmer|null
      */
     static function getNewFarmer($id)
     {
@@ -161,8 +174,11 @@ class Database
 
     }
 
-    /*
+    /**
      * Récupère les informations necessaire au lvlup du farmer
+     * @param $id
+     * @param $level
+     * @return mixed
      */
     static function getFarmerLevel($id,$level)
     {
@@ -180,8 +196,11 @@ class Database
         return $result;
     }
 
-    /*
+
+    /**
      * Check if user allready exist
+     * @param $mail
+     * @return bool
      */
     static function userAllreadyExist($mail)
     {
@@ -205,6 +224,10 @@ class Database
         }
     }
 
+    /**
+     * @param $mail
+     * @return mixed
+     */
     static function getUserIdName($mail)
     {
         if(Database::getInstance()->PDO == null)
@@ -219,6 +242,11 @@ class Database
         return $requete->fetch();
     }
 
+    /**
+     * @param $mail
+     * @param $pseudo
+     * @param $password
+     */
     static function addNewUser($mail,$pseudo, $password)
     {
         $pdo = Database::getPDO();
@@ -227,6 +255,10 @@ class Database
         $requete->execute(array($mail, $pseudo, $password));
     }
 
+    /**
+     * @param $mail
+     * @return mixed
+     */
     static function getPassword($mail)
     {
         $pdo = Database::getPDO();
@@ -237,7 +269,10 @@ class Database
     }
 
 
-
+    /**
+     * @param $id
+     * @return mixed
+     */
     static function getUpgrade($id)
     {
         $pdo = Database::getPDO();
@@ -252,6 +287,10 @@ class Database
         return $requete->fetch();
     }
 
+    /**
+     * @param $id_farmer
+     * @return mixed
+     */
     static function getAllUpdateForFarmer($id_farmer)
     {
         $pdo = Database::getPDO();
@@ -262,5 +301,34 @@ class Database
                                     ');
         $requete->execute(array($id_farmer));
         return $requete->fetchAll();
+    }
+
+    static function getIdLangByShortName($shortName)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare('SELECT id_lang FROM lang where shortName = ?');
+        $requete->execute(array($shortName));
+        $result = $requete->fetch();
+        return $result['id_lang'];
+    }
+
+
+    /**
+     * @param null $lang
+     * @param null $designation
+     * @param null $name
+     */
+    static function addFarmer($lang = null, $designation = null, $name = null)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare('INSERT INTO farmer (id_media, dateAdd, DateUpdate) VALUE (NULL,'.date("dd.mm.YYYY").','.date("dd.mm.YYYY").')');
+        $requete->execute();
+        if($lang != null)
+        {
+
+            $requeteTraduction = $pdo->prepare('INSERT INTO farmer_lang (Designation, Name) VALUE (?,?)');
+            var_dump($requeteTraduction);
+            $requeteTraduction->execute(array($designation,$name));
+        }
     }
 }

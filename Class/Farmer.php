@@ -247,4 +247,6 @@ class Farmer
         ;
         return $result * $multiple * $this->getNumber();
     }
+
+    
 }
