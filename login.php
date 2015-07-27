@@ -1,10 +1,11 @@
 <?php
-    include 'Include/header.php';
+    include_once 'including_file.php';
     if(isset($_SESSION['user']))
     {
         header("Location: main.php");
     }
-var_dump($_SERVER);
+    include 'Include/header.php';
+
 ?>
     <script src="Js/login.js" ></script>
 </head>
@@ -36,7 +37,7 @@ var_dump($_SERVER);
                                     <td><input id="mail" type="text" name="Mail" placeholder="email"/></td>
                                 </tr>
                                 <tr>
-                                    <td><input id="Password" type="text" name="Password" placeholder="Password"/></td>
+                                    <td><input id="Password" type="password" name="Password" placeholder="Password"/></td>
                                 </tr>
                                 <tr>
                                     <td><input id="Login" type="button" value="Login"/></td>
@@ -49,20 +50,20 @@ var_dump($_SERVER);
                         <td>
                             <table>
                                 <tr>
-                                    <td><input id="nameRegistration" type="text" placeholder="User Name"/></td>
+                                    <td><input id="nameRegistration" type="text" name="userName" placeholder="User Name"/></td>
                                 </tr>
                                 <tr>
-                                    <td><input id="PasswordRegistration" type="text" placeholder="Password"/></td>
+                                    <td><input id="PasswordRegistration" type="password" name="password" placeholder="Password"/></td>
                                 </tr>
                                 <tr>
-                                    <td><input id="PasswordRegistrationVerif" type="text" placeholder="Confirm password"/></td>
+                                    <td><input id="PasswordRegistrationVerif" type="password" name="password2" placeholder="Confirm password"/></td>
                                 </tr>
                                 <tr>
-                                    <td><input id="EmailRegistration" type="text" placeholder="Email"/></td>
+                                    <td><input id="EmailRegistration" type="text" name="mailRegister" placeholder="Email"/></td>
                                 </tr>
 
                                 <tr>
-                                    <td><input id="NewAccount" type="button" value="NewAccount"/></td>
+                                    <td><input id="newAccount" type="button" value="NewAccount"/></td>
                                 </tr>
                             </table>
                         </td>

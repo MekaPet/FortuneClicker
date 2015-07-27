@@ -13,7 +13,18 @@
 ?>
 
     <body>
-        <div id="menu">
+        <div id="contener">
+            <div id="result">
 
+            </div>
+            <div id="menu">
+
+            </div>
+            <div id="upgrade">
+
+            </div>
+            <div id="">
+
+            </div>
         </div>
     </body>

@@ -5,7 +5,6 @@
  * Date: 19/06/2015
  * Time: 12:29
  */
-    session_start();
 ?>
 
 <!doctype html>
@@ -14,3 +13,4 @@
     <title>Fortune clicker</title>
     <link rel="stylesheet" href="Css/global.css" />
     <script src="Js/JQuery.js" ></script>
+    <meta charset="utf-8"/>

@@ -7,8 +7,8 @@ table{
 #contener
 {
 
-    height: 800px;
-    width:  1000px;
+    height: 600px;
+    width:  800px;
     margin-left:auto;
     margin-right: auto;
 }
@@ -53,4 +53,12 @@ table{
 {
     border-bottom-style: solid;
     border-bottom-color: #f0f0f0;
+}
+
+#result {
+    border-style: groove;
+    border-width: 2px;
+    border-color: #23527c;
+    width: 100px;
+    height: 100px;
 }

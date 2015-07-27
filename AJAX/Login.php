@@ -10,7 +10,6 @@
 /*
  * Le fichier php retourne 1 si c'est valide ou 0 sinon.
  */
-session_start();
 
 include '../including_file.php';
 if(isset($_POST['mail']))
