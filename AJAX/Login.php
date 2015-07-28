@@ -17,7 +17,7 @@ if(isset($_POST['mail']))
     $mail = $_POST['mail'];
     if (isset($_POST['password']))
     {
-        $password = Cryptage::encrypt($_POST['password']);
+        $password = Password::encrypt($_POST['password']);
         $user = User::login($mail,$password);
         if($user == false)
         {

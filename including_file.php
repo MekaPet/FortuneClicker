@@ -6,8 +6,9 @@
  * Time: 10:19
  */
 session_start();
+
 include_once "Class/Context.php";
-include_once "Class/Cryptage.php";
+include_once "Class/Password.php";
 include_once "Class/Database.php";
 include_once "Class/Farmer.php";
 include_once "Class/Tool.php";

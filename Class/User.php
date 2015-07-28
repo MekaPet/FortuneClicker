@@ -190,4 +190,12 @@ class User
         }
         return $result;
     }
+
+    static function isEmail($string)
+    {
+        if(strpos($string,'@'))
+            return true;
+        else
+            return false;
+    }
 }

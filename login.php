@@ -53,7 +53,12 @@
                                     <td><input id="nameRegistration" type="text" name="userName" placeholder="User Name"/></td>
                                 </tr>
                                 <tr>
-                                    <td><input id="PasswordRegistration" type="password" name="password" placeholder="Password"/></td>
+                                    <td>
+                                        <input id="PasswordRegistration" type="password" name="password" placeholder="Password"/>
+                                        <div id="passwordInfo">
+
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><input id="PasswordRegistrationVerif" type="password" name="password2" placeholder="Confirm password"/></td>
