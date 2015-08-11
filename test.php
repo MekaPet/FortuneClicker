@@ -27,16 +27,17 @@ var_dump(stristr($test, 'en') == true);
 //var_dump(Cryptage::encrypt("test"));
 //var_dump(Database::getUpgrade(1));
 
-//Database::addNewUser("test","kedorev",Cryptage::encrypt("azerty"));
-//$user = User::login("test",Password::encrypt("azerty"));
+//Database::addNewUser("test","kedorev",Password::encrypt("azerty"));
+$user = User::login("test",Password::encrypt("azerty"));
 //var_dump($user);
-//$user->addNewFarmerToPlayer(1);
-//$user->addNewFarmerToPlayer(2);
-//$user->addNewUpgradeToPlayer(2);
-//$user->addNewUpgradeToPlayer(1);
-//var_dump($user->getFarmer(0)->addFarmer(4));
-//var_dump($user->getFarmer(1)->addFarmer(1));
-//var_dump($user);
+$user->addNewFarmerToPlayer(1);
+$user->addNewFarmerToPlayer(2);
+$user->addNewUpgradeToPlayer(2);
+$user->addNewUpgradeToPlayer(1);
+var_dump($user->getFarmer(0)->addFarmer(4));
+var_dump($user->getFarmer(1)->addFarmer(1));
+var_dump($user);
+var_dump($user->getFarmer(0)->getDescription());
 
 //var_dump($farmer->getProcWithUpgrade($user));
 //$farmer->add1Farmer();
@@ -45,5 +46,5 @@ var_dump(stristr($test, 'en') == true);
 
 //Database::addFarmer();
 //Database::addFarmer(1,"test ajout designation", "ajout nom");
-var_dump($_SERVER);
-var_dump(Password::generateNew());
+//var_dump($_SERVER);
+//var_dump(Password::generateNew());
