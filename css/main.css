@@ -1,0 +1,54 @@
+#result {
+    width: 180px;
+    height: 180px;
+    top:0px;
+    left:0px;
+}
+
+#menu
+{
+    width: 520px;
+    height: 100px;
+    left: -6px;
+}
+
+#upgrade
+{
+    width: 280px;
+    height: 100px;
+    left: -12px;
+}
+
+#divers {
+
+    width: 180px;
+    height: 620px;
+    top:-2px;
+    left: 0px;
+}
+
+#main{
+    width: 520px;
+    height: 700px;
+    left: -6px;
+    top: -82px;
+}
+
+#farmer{
+    width: 280px;
+    height: 700px;
+    top : -82px;
+    left: -12px;
+}
+
+.boxBorder{
+    border-style: double;
+    border-width: 2px;
+    border-color: #23527c;
+}
+
+.box
+{
+    position: relative;
+    display: inline-block;
+}

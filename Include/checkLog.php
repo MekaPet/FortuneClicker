@@ -7,13 +7,12 @@
  */
 
 session_start();
-if(isset($_SESSION['user']))
+if(isset($_SESSION['user']) && $_SERVER['PHP_SELF'] != '/FortuneClicker/main.php')
 {
     header("Location: main.php");
 }
-else
+else if(!isset($_SESSION['user']))
 {
     header("Location: login.php");
 }
-exit();
 ?>
