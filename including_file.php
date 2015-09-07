@@ -5,15 +5,13 @@
  * Date: 17/07/2015
  * Time: 10:19
  */
-session_start();
 
-include_once "Class/Context.php";
-include_once "Class/Password.php";
-include_once "Class/Database.php";
-include_once "Class/Farmer.php";
-include_once "Class/Tool.php";
-include_once "Class/Upgrade.php";
-include_once "Class/User.php";
+function chargerClasse($classe)
+{
+    require_once '/Class/' . $classe . '.php';
+}
+
+spl_autoload_register('chargerClasse');
 
 
 if(isset($_SESSION['context']))

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FortuneClicker.iml" filepath="$PROJECT_DIR$/.idea/FortuneClicker.iml" />
+      <module fileurl="file://C:/wamp/www/FortuneClicker/.idea/FortuneClicker.iml" filepath="C:/wamp/www/FortuneClicker/.idea/FortuneClicker.iml" />
     </modules>
   </component>
 </project>

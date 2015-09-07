@@ -7,10 +7,10 @@ include_once 'including_file.php';
  * Date: 19/06/2015
  * Time: 11:51
  */
-var_dump($_SERVER);
-$test = ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-var_dump($test);
-var_dump(stristr($test, 'en') == true);
+//var_dump($_SERVER);
+//$test = ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+//var_dump($test);
+//var_dump(stristr($test, 'en') == true);
 //Pour créer un farmer
 //$farmer = Database::getNewFarmer(1);
 //Pour monter de niveau un farmer.
@@ -31,13 +31,13 @@ var_dump(stristr($test, 'en') == true);
 $user = User::login("test",Password::encrypt("azerty"));
 //var_dump($user);
 $user->addNewFarmerToPlayer(1);
-$user->addNewFarmerToPlayer(2);
-$user->addNewUpgradeToPlayer(2);
-$user->addNewUpgradeToPlayer(1);
-var_dump($user->getFarmer(0)->addFarmer(4));
-var_dump($user->getFarmer(1)->addFarmer(1));
-var_dump($user);
-var_dump($user->getFarmer(0)->getDescription());
+//$user->addNewFarmerToPlayer(2);
+//$user->addNewUpgradeToPlayer(2);
+//$user->addNewUpgradeToPlayer(1);
+//var_dump($user->getFarmer(0)->addFarmer(4));
+//var_dump($user->getFarmer(1)->addFarmer(1));
+//var_dump($user);
+var_dump($user->getFarmer(0)->getURLforLogo());
 
 //var_dump($farmer->getProcWithUpgrade($user));
 //$farmer->add1Farmer();
@@ -48,3 +48,8 @@ var_dump($user->getFarmer(0)->getDescription());
 //Database::addFarmer(1,"test ajout designation", "ajout nom");
 //var_dump($_SERVER);
 //var_dump(Password::generateNew());
+?>
+
+<body>
+    <img src="<?php echo $user->getFarmer(0)->getURLforLogo() ?>">
+</body>

@@ -248,5 +248,10 @@ class Farmer
         return $result * $multiple * $this->getNumber();
     }
 
+    public function getURLforLogo()
+    {
+        $path = "Media/Image/F/" . $this->id . ".png";
+        return $path;
+    }
     
 }
