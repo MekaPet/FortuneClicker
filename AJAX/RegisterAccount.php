@@ -14,7 +14,8 @@ if(isset($_POST['mail']))
     {
         if (isset($_POST['password']))
         {
-            if(Password::isAllowed($_POST['password'])) {
+            if(Password::isAllowed($_POST['password']))
+            {
                 $password = Password::encrypt($_POST['password']);
                 if (isset($_POST['id'])) {
                     $pseudo = $_POST['id'];
@@ -29,25 +30,25 @@ if(isset($_POST['mail']))
                     }
 
                 } else {
-                    echo "pseudo non définit";
+                    echo 2;
                 }
             }
             else
             {
-                echo "password invalide";
+                echo 3;
             }
         }
         else
         {
-            echo "password non définit";
+            echo 4;
         }
     }
     else
     {
-        echo "email non valide";
+        echo 5;
     }
 }
 else
 {
-    echo "mail non définit";
+    echo 6;
 }
