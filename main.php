@@ -10,9 +10,13 @@
 
     include 'Include/checkLog.php';
     include 'Include/header.php';
+    include 'including_file.php';
+
+$user = User::login("test",Password::encrypt("azerty"));
+$user->addNewFarmerToPlayer(1);
 ?>
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="Js/main.js" ></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="Js/main.js" ></script>
     </head>
     <body>
         <div id="contener">
@@ -32,7 +36,10 @@
                 page principale
             </div>
             <div id="farmer"  class="boxBorder box">
-                farmer
+                <?php
+                include 'Block/farmer1.php';
+
+                ?>
             </div>
         </div>
     </body>
