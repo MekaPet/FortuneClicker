@@ -7,10 +7,10 @@ include_once 'including_file.php';
  * Date: 19/06/2015
  * Time: 11:51
  */
-var_dump($_SERVER);
-$test = ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-var_dump($test);
-var_dump(stristr($test, 'en') == true);
+//var_dump($_SERVER);
+//$test = ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+//var_dump($test);
+//var_dump(stristr($test, 'en') == true);
 //Pour créer un farmer
 //$farmer = Database::getNewFarmer(1);
 //Pour monter de niveau un farmer.
@@ -45,5 +45,5 @@ var_dump(stristr($test, 'en') == true);
 
 //Database::addFarmer();
 //Database::addFarmer(1,"test ajout designation", "ajout nom");
-var_dump($_SERVER);
-var_dump(Password::generateNew());
+//var_dump($_SERVER);
+//var_dump(Password::generateNew());
