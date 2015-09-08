@@ -6,7 +6,7 @@
 */
 
 <div class="farmer">
-    <img src="<?php echo $user->getFarmer(1) ?>" >
+    <img src="<?php echo $user->getFarmer(1)-> ?>" >
     <?php
     echo $user->getFarmer(1)->
     var_dump($_SESSION);

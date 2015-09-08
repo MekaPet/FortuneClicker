@@ -6,14 +6,10 @@
  * Time: 12:28
  */
 
-
-
+    include 'including_file.php';
     include 'Include/checkLog.php';
     include 'Include/header.php';
-    include 'including_file.php';
 
-$user = User::login("test",Password::encrypt("azerty"));
-$user->addNewFarmerToPlayer(1);
 ?>
         <link rel="stylesheet" href="css/main.css" />
         <script src="Js/main.js" ></script>
@@ -37,8 +33,7 @@ $user->addNewFarmerToPlayer(1);
             </div>
             <div id="farmer"  class="boxBorder box">
                 <?php
-                include 'Block/farmer1.php';
-
+                    include 'Block/farmer1.php';
                 ?>
             </div>
         </div>

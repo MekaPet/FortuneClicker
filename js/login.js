@@ -16,10 +16,12 @@ function login()
     {
         if(data == 1)
         {
+            alert("Vous etes connecté");
             window.location.href = "main.php";
         }
         else
         {
+            alert(data);
             alert ("L'identifiant et le mot de passe ne concorde pas.")
         }
 

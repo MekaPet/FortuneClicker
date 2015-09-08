@@ -5,6 +5,8 @@
  * Date: 17/07/2015
  * Time: 10:19
  */
+session_start();
+
 
 function chargerClasse($classe)
 {
