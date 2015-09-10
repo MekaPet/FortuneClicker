@@ -7,6 +7,7 @@ include_once 'including_file.php';
  * Date: 19/06/2015
  * Time: 11:51
  */
+
 //var_dump($_SERVER);
 //$test = ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 //var_dump($test);
@@ -47,3 +48,43 @@ include_once 'including_file.php';
 //Database::addFarmer(1,"test ajout designation", "ajout nom");
 //var_dump($_SERVER);
 //var_dump(Password::generateNew());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var_dump($user = User::login("kedorev@gmail.com",Password::encrypt("azerty")));
+    $user->addNewFarmerToPlayer(1);
+
+
+/*?> <img src= <?php echo $user->getFarmer(0)->getURLforLogo(); ?>>
+<?php*/
+$user->addNewFarmerToPlayer(2);
+    $user->addNewFarmerToPlayer(4);
+
+var_dump($user);
+
+  $user->getFarmer(0)->addFarmer(7);
+$user->getFarmer(1)->addFarmer(2);
+$user->addNewUpgradeToPlayer(1);
+var_dump($user);?>
