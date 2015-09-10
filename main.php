@@ -8,12 +8,13 @@
 
 
 
-    include 'Include/checkLog.php';
+    //include 'Include/checkLog.php';
     include 'Include/header.php';
     include 'including_file.php';
 
 $user = User::login("test",Password::encrypt("azerty"));
 $user->addNewFarmerToPlayer(1);
+var_dump($user);
 ?>
         <link rel="stylesheet" href="css/main.css" />
         <script src="Js/main.js" ></script>
