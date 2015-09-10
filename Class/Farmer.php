@@ -143,7 +143,7 @@ class Farmer
     /**
      * @param mixed $number
      */
-    private function setNumber($number)
+    public function setNumber($number)
     {
         $this->number = $number;
     }
@@ -256,4 +256,5 @@ class Farmer
         else
             $this->setNumber(0);
     }
+
 }

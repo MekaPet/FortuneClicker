@@ -9,6 +9,7 @@
 if(isset($_SESSION['user']) && $_SERVER['PHP_SELF'] != '/FortuneClicker/main.php')
 {
     header("Location: main.php");
+
 }
 else if(!isset($_SESSION['user']))
 {

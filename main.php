@@ -10,7 +10,9 @@
     include 'Include/checkLog.php';
     include 'Include/header.php';
 
-
+var_dump($_SESSION);
+    $user = unserialize($_SESSION['user']);
+    var_dump($user);
 
 ?>
         <link rel="stylesheet" href="css/main.css" />
