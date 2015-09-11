@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242b6751-b990-413b-8272-a4cdc95d3700" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer1.php" afterPath="$PROJECT_DIR$/Block/farmer1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer2.php" afterPath="$PROJECT_DIR$/Block/farmer2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer3.php" afterPath="$PROJECT_DIR$/Block/farmer3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer4.php" afterPath="$PROJECT_DIR$/Block/farmer4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/global.css" afterPath="$PROJECT_DIR$/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="C:\wamp\www\FortuneClicker\Media\Image\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\FortuneClicker\Media\Image\icon pepite.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -61,29 +58,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Class/Database.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-94.80769" vertical-offset="408" max-vertical-offset="5780">
-                  <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
-                  <folding>
-                    <marker date="1441708536000" expanded="true" signature="2480:2531" placeholder="SELECT count..user..." />
-                    <marker date="1441708536000" expanded="true" signature="3155:3431" placeholder="SELECT fl.Na..farmer_lang..." />
-                    <marker date="1441708536000" expanded="true" signature="4642:4811" placeholder="SELECT flvl...farmer_level..." />
-                    <marker date="1441708536000" expanded="true" signature="5260:5371" placeholder="SELECT count..user..." />
-                    <marker date="1441708536000" expanded="true" signature="5887:6002" placeholder="SELECT pseud..user..." />
-                    <marker date="1441708536000" expanded="true" signature="6303:6392" placeholder="INSERT INTO ..." />
-                    <marker date="1441708536000" expanded="true" signature="6635:6675" placeholder="SELECT passw..user..." />
-                    <marker date="1441708536000" expanded="true" signature="6967:7407" placeholder="SELECT u.val..upgrade..." />
-                    <marker date="1441708536000" expanded="true" signature="7719:7951" placeholder="SELECT u.id_..upgrade..." />
-                    <marker date="1441708536000" expanded="true" signature="8210:8254" placeholder="SELECT id_la..lang..." />
-                    <marker date="1441708536000" expanded="true" signature="8636:8745" placeholder="INSERT INTO ..." />
-                    <marker date="1441708536000" expanded="true" signature="8863:8918" placeholder="INSERT INTO ..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -107,18 +81,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37339744" vertical-offset="906" max-vertical-offset="1530">
+                <state vertical-scroll-proportion="1.8253205" vertical-offset="0" max-vertical-offset="1530">
                   <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Password.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Class/Password.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-29.423077" vertical-offset="102" max-vertical-offset="1955">
-                  <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -128,11 +92,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.3076923" vertical-offset="408" max-vertical-offset="1190">
-                  <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+                <state vertical-scroll-proportion="0.94188035" vertical-offset="401" max-vertical-offset="1190">
+                  <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -161,17 +125,17 @@
           <file leaf-file-name="farmer3.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Block/farmer3.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="204">
+                  <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="farmer4.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="farmer4.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Block/farmer4.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
@@ -220,12 +184,12 @@
         <option value="$PROJECT_DIR$/Class/Farmer.php" />
         <option value="db-console:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/" />
         <option value="$PROJECT_DIR$/css/global.css" />
-        <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/Block/farmer1.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/Block/farmer2.php" />
-        <option value="$PROJECT_DIR$/Block/farmer3.php" />
         <option value="$PROJECT_DIR$/Block/farmer4.php" />
+        <option value="$PROJECT_DIR$/main.php" />
+        <option value="$PROJECT_DIR$/Block/farmer3.php" />
       </list>
     </option>
   </component>
@@ -312,24 +276,6 @@
               <option name="myItemId" value="Image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FortuneClicker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FortuneClicker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="U" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -367,6 +313,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Include" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -382,6 +342,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,7 +646,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441958892406</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Merge branch 'master' of https://github.com/Warriiors/FortuneClicker&#10;&#10;Conflicts:&#10;&#9;.idea/dataSources.ids&#10;&#9;.idea/dataSources.xml&#10;&#9;.idea/workspace.xml&#10;&#9;main.php&#10;">
+      <created>1441964411668</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1441964411668</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -686,7 +666,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26904762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17777778" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1920635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1920635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.43017057" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -761,63 +741,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2</OriginalElement>
-          <nodes>
-            <node x="72.0" y="135.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer</node>
-            <node x="0.0" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
-            <node x="0.0" y="499.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
-            <node x="505.25" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
-            <node x="546.25" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
-            <node x="525.75" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
-            <node x="357.75" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
-            <node x="256.0" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade">
-              <point x="42.0" y="-59.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
-              <point x="46.25" y="-59.0" />
-              <point x="-37.0" y="48.0" />
-            </edge>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type">
-              <point x="0.0" y="-70.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
-              <point x="-46.25" y="-59.0" />
-              <point x="302.25" y="289.0" />
-              <point x="210.0" y="289.0" />
-              <point x="46.0" y="59.0" />
-            </edge>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
-              <point x="0.0" y="-70.0" />
-              <point x="-46.0" y="59.0" />
-            </edge>
-            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
-              <point x="-42.0" y="-59.0" />
-              <point x="547.25" y="289.0" />
-              <point x="468.75" y="289.0" />
-              <point x="37.0" y="48.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.1" x="-73.99999999999997" y="203.0" />
-          <SelectedNodes>
-            <node>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Class/Context.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1105">
@@ -1226,14 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Class/Password.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077" vertical-offset="102" max-vertical-offset="1955">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Class/Farmer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6538463" vertical-offset="1399" max-vertical-offset="4420">
@@ -1276,27 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Class/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-94.80769" vertical-offset="408" max-vertical-offset="5780">
-          <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
-          <folding>
-            <marker date="1441708536000" expanded="true" signature="2480:2531" placeholder="SELECT count..user..." />
-            <marker date="1441708536000" expanded="true" signature="3155:3431" placeholder="SELECT fl.Na..farmer_lang..." />
-            <marker date="1441708536000" expanded="true" signature="4642:4811" placeholder="SELECT flvl...farmer_level..." />
-            <marker date="1441708536000" expanded="true" signature="5260:5371" placeholder="SELECT count..user..." />
-            <marker date="1441708536000" expanded="true" signature="5887:6002" placeholder="SELECT pseud..user..." />
-            <marker date="1441708536000" expanded="true" signature="6303:6392" placeholder="INSERT INTO ..." />
-            <marker date="1441708536000" expanded="true" signature="6635:6675" placeholder="SELECT passw..user..." />
-            <marker date="1441708536000" expanded="true" signature="6967:7407" placeholder="SELECT u.val..upgrade..." />
-            <marker date="1441708536000" expanded="true" signature="7719:7951" placeholder="SELECT u.id_..upgrade..." />
-            <marker date="1441708536000" expanded="true" signature="8210:8254" placeholder="SELECT id_la..lang..." />
-            <marker date="1441708536000" expanded="true" signature="8636:8745" placeholder="INSERT INTO ..." />
-            <marker date="1441708536000" expanded="true" signature="8863:8918" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Block/farmer1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
@@ -1305,10 +1199,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
+    <entry file="file://$PROJECT_DIR$/Block/farmer2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="408" max-vertical-offset="1190">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/Password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3076923" vertical-offset="102" max-vertical-offset="1955">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.213675" vertical-offset="408" max-vertical-offset="5780">
+          <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
+          <folding>
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT count..user..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT fl.Na..farmer_lang..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT flvl...farmer_level..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT count..user..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT pseud..user..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT passw..user..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT u.val..upgrade..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT u.id_..upgrade..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="SELECT id_la..lang..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1441708536000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Block/farmer4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1323,15 +1254,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37339744" vertical-offset="906" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="1.8253205" vertical-offset="0" max-vertical-offset="1530">
           <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Block/farmer2.php">
+    <entry file="file://$PROJECT_DIR$/SQL/fortuneclickerv2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
+        <state vertical-scroll-proportion="-1.6710311" vertical-offset="1021" max-vertical-offset="4182">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1339,16 +1270,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Block/farmer3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="204">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Block/farmer4.php">
+    <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.94188035" vertical-offset="401" max-vertical-offset="1190">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding />
         </state>
       </provider>

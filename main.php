@@ -46,20 +46,20 @@
                 </div>
                 <div id="farmer"  class="boxBorder box">
                     <?php
-                    include 'Block/farmer1.php';
+                        include 'Block/farmer1.php';
                     ?>
                     <?php
-                    include 'Block/farmer2.php';
+                        include 'Block/farmer2.php';
                     ?>
                     <?php
-                    include 'Block/farmer3.php';
+                        include 'Block/farmer3.php';
                     ?>
                     <?php
-                    include 'Block/farmer4.php';
+                        include 'Block/farmer4.php';
                     ?>
                 </div>
             </div>
-                </div>
+         </div>
 
 
 
