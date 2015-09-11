@@ -153,7 +153,12 @@ class Database
                                   FROM farmer_lang fl
                                   JOIN farmer_level flvl ON fl.id_Farmer = flvl.id_farmer
                                   WHERE fl.id_Farmer = ? AND id_lang = ?' );
-
+        /*
+         *
+         SELECT fl.Name, fl.Designation, flvl.cost, flvl.goldPerTick
+                                  FROM farmer_lang fl, farmer_level flvl
+                                  WHERE fl.id_Farmer = ? AND id_lang = ? AND fl.id_Farmer = flvl.id_farmer'
+        */
         $requete->execute(array($id, 1));
         $result = $requete->fetch();
 
@@ -164,7 +169,7 @@ class Database
             $farmer->setLevel(1);
             $farmer->setCost($result['cost']);
             $farmer->setProcPerInstance($result['goldPerTick']);
-            $farmer->getNumber(0);
+            $farmer->setNumber(0);
             return $farmer;
         }
         else

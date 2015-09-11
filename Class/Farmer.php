@@ -25,21 +25,20 @@ class Farmer
      */
     private $description;
     /*
-     * The cost of the next upgrade.
+     * The cost of the next farmer.
+     * Le cout du farmer
      */
     private $cost;
     /*
-     * The amount of the upgrade
+     * The amount of the farmer
+     * Le nombre de farmer
      */
     private $number;
     /*
      * The amount of the gold earn per tick
+     * Le montant de l'iterantion par tick
      */
     private $procPerInstance;
-    /*
-     * The URL of the image
-     */
-    private $urlImage;
 
 
 
@@ -102,13 +101,7 @@ class Farmer
     {
         return $this->procPerInstance;
     }
-    /**
-     * @return mixed
-     */
-    public function getUrlImage()
-    {
-        return $this->urlImage;
-    }
+
 
 
 ////////////////////////
@@ -163,14 +156,6 @@ class Farmer
         $this->procPerInstance = $procPerInstance;
     }
 
-    /**
-     * @param mixed $urlImage
-     */
-    public function setUrlImage($urlImage)
-    {
-        $this->urlImage = $urlImage;
-    }
-
     public function update()
     {
         $this->setLevel($this->getLevel() +1);
@@ -201,7 +186,7 @@ class Farmer
     }
 
     /*
-     * Fonction en dev : non utilisable pour le moment
+     * Permet d'augmenter le nombre du farmer de 10
      */
     public function add10Farmer()
     {
@@ -209,7 +194,7 @@ class Farmer
     }
 
     /*
-     * Fonction en dev : non utilisable pour le moment
+     * Permet d'augmenter le nombre du farmer de 100
      */
     public function add100Farmer()
     {
@@ -248,10 +233,28 @@ class Farmer
         return $result * $multiple * $this->getNumber();
     }
 
+    /**
+     * Retourne le logo du farmer.
+     * @return string
+     */
     public function getURLforLogo()
     {
         $path = "Media/Image/F/" . $this->id . ".png";
         return $path;
     }
-    
+
+    /**
+     * Remove some farmer ( number )
+     * Permet de réduire le nombre de farmer.
+     * @param $nb
+     */
+    public function removeFarmer($nb)
+    {
+        $result = $this->getNumber()-$nb;
+        if ($result > 0)
+            $this->setNumber($result);
+        else
+            $this->setNumber(0);
+    }
+
 }

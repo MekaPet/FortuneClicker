@@ -16,10 +16,12 @@ function login()
     {
         if(data == 1)
         {
+            alert("Vous etes connecté");
             window.location.href = "main.php";
         }
         else
         {
+            alert(data);
             alert ("L'identifiant et le mot de passe ne concorde pas.")
         }
 
@@ -37,10 +39,31 @@ function newAccount()
                 mail: $("#EmailRegistration").val()
             },
             function (data) {
-                if(data == true)
+                alert(data);
+                if(data == 1)
                 {
                     alert("Votre compte a ete cree avec succes");
                     window.location.href = "main.php";
+                }
+                else if(data == 2)
+                {
+                    alert("pseudo non définit");
+                }
+                else if (data == 3)
+                {
+                    alert("password invalide. Il ne correspond pas aux critères de sécurité");
+                }
+                else if (data == 4)
+                {
+                    alert("password non définit");
+                }
+                else if (data == 5)
+                {
+                    alert("email non valide");
+                }
+                else if (data == 6)
+                {
+                    alert("email non définit");
                 }
                 else
                 {

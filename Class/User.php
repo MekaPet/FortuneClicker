@@ -32,10 +32,33 @@ class User
      */
     private $upgradeList;
 
+    /*
+     * Ressources disponibles
+     * Ressource avalable
+     */
+    private $ressourceList;
+
+
     function __construct($pseudo, $id)
     {
         $this->pseudo = $pseudo;
         $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRessourceList()
+    {
+        return $this->ressourceList;
+    }
+
+    /**
+     * @param mixed $ressourceList
+     */
+    private function setRessourceList($ressourceList)
+    {
+        $this->ressourceList = $ressourceList;
     }
 
 
@@ -119,6 +142,12 @@ class User
         }
     }
 
+    /**
+     * Permet a un joueur de se connecter a son compte
+     * @param $mail
+     * @param $password
+     * @return bool|User
+     */
     static function login($mail, $password)
     {
         if(Database::userAllreadyExist($mail))
@@ -198,4 +227,10 @@ class User
         else
             return false;
     }
+
+    function addProc($procValue)
+    {
+        $this->setRessourceList($this->getRessourceList() + $procValue);
+    }
+
 }

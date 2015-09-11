@@ -11,9 +11,9 @@ class Password
 
     private static $PASSWORD_MIN_SIZE = 8;
     private static $PASSWORD_MAX_SIZE = 15;
-    private static $PASSWORD_SPECIAL_CHAR_MIN = 3;
-    private static $PASSWORD_NUMBER_CHAR_MIN = 2;
-    private static $PASSWORD_UPPER_CHAR_MIN = 4;
+    private static $PASSWORD_SPECIAL_CHAR_MIN = 0;
+    private static $PASSWORD_NUMBER_CHAR_MIN = 1;
+    private static $PASSWORD_UPPER_CHAR_MIN = 1;
 
 
     static function encrypt($string)
@@ -37,8 +37,6 @@ class Password
             {
                 $password = $password . $charAvailable[mt_rand(0,strlen($charAvailable)-1)];
             }
-            var_dump($password);
-            var_dump(Password::isAllowed($password));
             $isValide = Password::isAllowed($password);
 
         }
@@ -48,6 +46,9 @@ class Password
 
     static function isAllowed($password)
     {
+        echo $password . "\n";
+        echo "nb upper case : " .Password::nbUpperChar($password);
+
         if(strlen($password)> Password::$PASSWORD_MAX_SIZE or strlen($password) < Password::$PASSWORD_MIN_SIZE)
         {
             return false;
@@ -100,11 +101,11 @@ class Password
 
     static function nbUpperChar($string)
     {
-        $charAvailable = 'AZERTYUIOPMLKJHGFDSQWXCVBN';
+        $charAvailable = 'AZERTYUIOPMLKJHGFDSQWXCVBNA';
         $nb = 0;
         for($i = strlen($string)-1;$i>=0;$i--)
         {
-            if (strpos($charAvailable, $string[$i]))
+            if (strpos($charAvailable, $string[$i]) == null)
             {
                 $nb++;
             }

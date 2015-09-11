@@ -4,6 +4,7 @@
     {
         header("Location: main.php");
     }
+    var_dump($_SESSION);
     include 'Include/header.php';
 
 ?>

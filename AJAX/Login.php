@@ -25,7 +25,8 @@ if(isset($_POST['mail']))
         }
         else
         {
-            $_SESSION['user'] = $user;
+
+            $_SESSION['user'] = serialize($user);
             echo 1;
         }
     }

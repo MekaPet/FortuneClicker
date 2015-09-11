@@ -29,6 +29,10 @@ class Upgrade
      */
     private $id_farmer;
     /*
+     * rze
+     */
+private $isActive;
+    /*
      * Effect of upgrade on farmer
      */
     private $effect_value;
@@ -162,5 +166,9 @@ class Upgrade
         $this->effect_type = $effect;
     }
 
-
+    public function getURLforLogo()
+    {
+        $path = "Media/Image/U/" . $this->id . ".png";
+        return $path;
+    }
 }
