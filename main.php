@@ -38,6 +38,15 @@
                 <?php
                     include 'Block/farmer1.php';
                 ?>
+                <?php
+                include 'Block/farmer2.php';
+                ?>
+                <?php
+                include 'Block/farmer3.php';
+                ?>
+                <?php
+                include 'Block/farmer4.php';
+                ?>
             </div>
         </div>
     </body>
