@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242b6751-b990-413b-8272-a4cdc95d3700" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Media/Image/F/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Media/Image/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Media/Image/icon pepite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SQL/fortuneclickerv2(2).sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Media/Image/F/1.png" afterPath="$PROJECT_DIR$/Media/Image/F/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Class/Farmer.php" afterPath="$PROJECT_DIR$/Class/Farmer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Include/checkLog.php" afterPath="$PROJECT_DIR$/Include/checkLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer1.php" afterPath="$PROJECT_DIR$/Block/farmer1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FortuneClicker.iml" afterPath="$PROJECT_DIR$/.idea/FortuneClicker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer2.php" afterPath="$PROJECT_DIR$/Block/farmer2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer3.php" afterPath="$PROJECT_DIR$/Block/farmer3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Block/farmer4.php" afterPath="$PROJECT_DIR$/Block/farmer4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL/fortuneclickerv2(2).sql" afterPath="$PROJECT_DIR$/SQL/fortuneclickerv2(2).sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FortuneClicker.iws" />
@@ -64,194 +61,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fortuneclickerv2.farmer_lang" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer_lang">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fortuneclickerv2.farmer_level" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer_level">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fortuneclickerv2.farmer" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQL - fortuneclickerv2@localhost" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://db-console:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Class/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.85" vertical-offset="0" max-vertical-offset="153">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="-94.80769" vertical-offset="408" max-vertical-offset="5780">
+              <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
+              <folding>
+                <marker date="1441708536000" expanded="true" signature="2480:2531" placeholder="SELECT count..user..." />
+                <marker date="1441708536000" expanded="true" signature="3155:3431" placeholder="SELECT fl.Na..farmer_lang..." />
+                <marker date="1441708536000" expanded="true" signature="4642:4811" placeholder="SELECT flvl...farmer_level..." />
+                <marker date="1441708536000" expanded="true" signature="5260:5371" placeholder="SELECT count..user..." />
+                <marker date="1441708536000" expanded="true" signature="5887:6002" placeholder="SELECT pseud..user..." />
+                <marker date="1441708536000" expanded="true" signature="6303:6392" placeholder="INSERT INTO ..." />
+                <marker date="1441708536000" expanded="true" signature="6635:6675" placeholder="SELECT passw..user..." />
+                <marker date="1441708536000" expanded="true" signature="6967:7407" placeholder="SELECT u.val..upgrade..." />
+                <marker date="1441708536000" expanded="true" signature="7719:7951" placeholder="SELECT u.id_..upgrade..." />
+                <marker date="1441708536000" expanded="true" signature="8210:8254" placeholder="SELECT id_la..lang..." />
+                <marker date="1441708536000" expanded="true" signature="8636:8745" placeholder="INSERT INTO ..." />
+                <marker date="1441708536000" expanded="true" signature="8863:8918" placeholder="INSERT INTO ..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</OriginalElement>
-              <nodes>
-                <node x="188.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
-                <node x="89.75" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
-                <node x="168.0" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
-                <node x="0.0" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade">
-                  <point x="42.0" y="-59.0" />
-                  <point x="215.75" y="289.0" />
-                  <point x="273.5" y="289.0" />
-                  <point x="0.0" y="70.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type">
-                  <point x="0.0" y="-70.0" />
-                  <point x="0.0" y="37.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
-                  <point x="-42.0" y="-59.0" />
-                  <point x="131.75" y="289.0" />
-                  <point x="74.0" y="289.0" />
-                  <point x="0.0" y="48.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="-324.5" y="82.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2" pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2</OriginalElement>
-              <nodes>
-                <node x="72.0" y="135.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer</node>
-                <node x="0.0" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
-                <node x="0.0" y="499.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
-                <node x="546.25" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
-                <node x="505.25" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
-                <node x="525.75" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
-                <node x="357.75" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
-                <node x="256.0" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade">
-                  <point x="42.0" y="-59.0" />
-                  <point x="0.0" y="70.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
-                  <point x="46.25" y="-59.0" />
-                  <point x="-37.0" y="48.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type">
-                  <point x="0.0" y="-70.0" />
-                  <point x="0.0" y="37.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
-                  <point x="-46.25" y="-59.0" />
-                  <point x="302.25" y="289.0" />
-                  <point x="210.0" y="289.0" />
-                  <point x="46.0" y="59.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
-                  <point x="0.0" y="-70.0" />
-                  <point x="-46.0" y="59.0" />
-                </edge>
-                <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
-                  <point x="-42.0" y="-59.0" />
-                  <point x="547.25" y="289.0" />
-                  <point x="468.75" y="289.0" />
-                  <point x="37.0" y="48.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.1" x="-73.73232323232307" y="202.68181818181822" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fortuneclickerv2.effect_type" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..effect_type">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fortuneclickerv2.upgrade_lang" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..upgrade_lang">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Class/Context.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="81" max-vertical-offset="1105">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.11371238" vertical-offset="0" max-vertical-offset="748">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -260,8 +97,80 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.538462" vertical-offset="98" max-vertical-offset="969">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="969">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farmer1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Block/farmer1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farmer2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Block/farmer2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farmer3.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Block/farmer3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farmer4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Block/farmer4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Farmer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Class/Farmer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6538463" vertical-offset="1399" max-vertical-offset="4420">
+              <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Class/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6538463" vertical-offset="1756" max-vertical-offset="4097">
+              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+              <folding>
+                <element signature="e#6#94#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Password.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Class/Password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.423077" vertical-offset="102" max-vertical-offset="1955">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -306,10 +215,13 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/AJAX/Login.php" />
         <option value="$PROJECT_DIR$/Include/checkLog.php" />
-        <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/Block/farmer1.php" />
         <option value="$PROJECT_DIR$/Class/Farmer.php" />
         <option value="db-console:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/" />
+        <option value="$PROJECT_DIR$/Block/farmer2.php" />
+        <option value="$PROJECT_DIR$/Block/farmer3.php" />
+        <option value="$PROJECT_DIR$/Block/farmer4.php" />
+        <option value="$PROJECT_DIR$/main.php" />
       </list>
     </option>
   </component>
@@ -318,10 +230,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="54" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -346,6 +258,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -496,9 +409,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FortuneClicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,6 +443,7 @@
       <recent name="D:\wamp\www\FortuneClicker\Media\Image\U" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\FortuneClicker\Media\Image\U" />
       <recent name="C:\wamp\www\FortuneClicker\Include" />
       <recent name="C:\wamp\www\FortuneClicker" />
       <recent name="C:\wamp\www\FortuneClicker\Ajax" />
@@ -530,17 +457,20 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -550,9 +480,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="false" name="FortuneClicker" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -709,34 +636,40 @@
       <option name="project" value="LOCAL" />
       <updated>1441881431231</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Merge branch 'master' of https://github.com/Warriiors/FortuneClicker&#10;&#10;Conflicts:&#10;&#9;.idea/dataSources.ids&#10;&#9;.idea/dataSources.xml&#10;&#9;.idea/workspace.xml&#10;&#9;main.php&#10;">
+      <created>1441955331582</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1441955331582</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13189189" sideWeight="0.5698294" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19616205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24466951" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26906317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17777778" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1920635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.43017057" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13189189" sideWeight="0.5698294" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32324323" sideWeight="0.66364604" order="0" side_tool="false" content_ui="tabs" />
@@ -757,9 +690,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -788,7 +721,8 @@
     <MESSAGE value="Correction bug : user::hasUpgrade&#10;Ajout : user::getAllProcPerInstance" />
     <MESSAGE value="Debut de la gestion de la connexion user.&#10;Ajout jquery" />
     <MESSAGE value="mise a jour connection et autoloader des class" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise a jour connection et autoloader des class" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Warriiors/FortuneClicker&#10;&#10;Conflicts:&#10;&#9;.idea/dataSources.ids&#10;&#9;.idea/dataSources.xml&#10;&#9;.idea/workspace.xml&#10;&#9;main.php&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Warriiors/FortuneClicker&#10;&#10;Conflicts:&#10;&#9;.idea/dataSources.ids&#10;&#9;.idea/dataSources.xml&#10;&#9;.idea/workspace.xml&#10;&#9;main.php&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -797,6 +731,120 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="uml://DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</OriginalElement>
+          <nodes>
+            <node x="89.75" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="188.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
+            <node x="168.0" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
+            <node x="0.0" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade">
+              <point x="42.0" y="-59.0" />
+              <point x="215.75" y="289.0" />
+              <point x="273.5" y="289.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
+              <point x="-42.0" y="-59.0" />
+              <point x="131.75" y="289.0" />
+              <point x="74.0" y="289.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-324.0" y="82.0" />
+          <SelectedNodes>
+            <node>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.schema:fortuneclickerv2</OriginalElement>
+          <nodes>
+            <node x="72.0" y="135.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer</node>
+            <node x="0.0" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
+            <node x="0.0" y="499.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
+            <node x="505.25" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="546.25" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
+            <node x="525.75" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
+            <node x="357.75" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
+            <node x="256.0" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade">
+              <point x="42.0" y="-59.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
+              <point x="46.25" y="-59.0" />
+              <point x="-37.0" y="48.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
+              <point x="-46.25" y="-59.0" />
+              <point x="302.25" y="289.0" />
+              <point x="210.0" y="289.0" />
+              <point x="46.0" y="59.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer">
+              <point x="0.0" y="-70.0" />
+              <point x="-46.0" y="59.0" />
+            </edge>
+            <edge source="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang" target="13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang">
+              <point x="-42.0" y="-59.0" />
+              <point x="547.25" y="289.0" />
+              <point x="468.75" y="289.0" />
+              <point x="37.0" y="48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.1" x="-73.99999999999997" y="203.0" />
+          <SelectedNodes>
+            <node>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/Context.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1105">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="969">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Class/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2354" max-vertical-offset="2907">
@@ -850,18 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..lang">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -928,50 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Class/Password.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077" vertical-offset="102" max-vertical-offset="1955">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1411">
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..upgrade">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Class/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2226" max-vertical-offset="5780">
-          <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
-          <folding>
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT count..user..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT fl.Na..farmer_lang..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT flvl...farmer_level..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT count..user..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT pseud..user..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT passw..user..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT u.val..upgrade..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT u.id_..upgrade..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="SELECT id_la..lang..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1441708535324" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,21 +981,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Class/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3224" max-vertical-offset="4097">
-          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Include/includeBlock.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
           <caret line="14" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="881">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,24 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/Logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,14 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="306">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="765">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1098,7 +1058,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Class/Context.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="81" max-vertical-offset="1105">
+        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="1105">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -1114,42 +1074,27 @@
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.ps_access</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
-            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
-            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
+            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="360.5" y="265.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="361.0" y="265.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Block/farmer1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21469575" vertical-offset="0" max-vertical-offset="871">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Class/Farmer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2663139" vertical-offset="3549" max-vertical-offset="4420">
-          <caret line="256" column="32" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
-          <folding />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.538462" vertical-offset="98" max-vertical-offset="969">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="969">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
@@ -1161,8 +1106,8 @@
           <ID>DATABASE</ID>
           <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</OriginalElement>
           <nodes>
-            <node x="18.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
             <node x="0.0" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
+            <node x="18.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
           </nodes>
           <notes />
           <edges>
@@ -1174,61 +1119,10 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="-244.0" y="89.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer_lang">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..farmer_level">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..upgrade_lang">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1241,28 +1135,21 @@
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
-            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
-            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
             <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
+            <node x="" y="">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="390.33333333333326" y="278.66666666666663" />
+          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="390.0" y="279.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.85" vertical-offset="0" max-vertical-offset="153">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1272,8 +1159,8 @@
           <ID>DATABASE</ID>
           <OriginalElement>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</OriginalElement>
           <nodes>
-            <node x="188.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="89.75" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="188.5" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="168.0" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
             <node x="0.0" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
           </nodes>
@@ -1296,11 +1183,13 @@
               <point x="0.0" y="48.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-324.5" y="82.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-324.0" y="82.0" />
+          <SelectedNodes>
+            <node>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
         </state>
       </provider>
@@ -1314,8 +1203,8 @@
             <node x="72.0" y="135.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer</node>
             <node x="0.0" y="314.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_level</node>
             <node x="0.0" y="499.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.user</node>
-            <node x="546.25" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="505.25" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade_lang</node>
+            <node x="546.25" y="0.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.effect_type</node>
             <node x="525.75" y="124.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.upgrade</node>
             <node x="357.75" y="146.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
             <node x="256.0" y="325.0">13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.farmer_lang</node>
@@ -1351,24 +1240,100 @@
               <point x="37.0" y="48.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.1" x="-73.73232323232307" y="202.68181818181822" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.1" x="-73.99999999999997" y="203.0" />
+          <SelectedNodes>
+            <node>13c87ab7-faae-4ab4-b479-7f8a6daa081b.table:fortuneclickerv2.lang</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1810bea2/13c87ab7-faae-4ab4-b479-7f8a6daa081b/fortuneclickerv2..effect_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/Class/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-94.80769" vertical-offset="408" max-vertical-offset="5780">
+          <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
+          <folding>
+            <marker date="1441708536000" expanded="true" signature="2480:2531" placeholder="SELECT count..user..." />
+            <marker date="1441708536000" expanded="true" signature="3155:3431" placeholder="SELECT fl.Na..farmer_lang..." />
+            <marker date="1441708536000" expanded="true" signature="4642:4811" placeholder="SELECT flvl...farmer_level..." />
+            <marker date="1441708536000" expanded="true" signature="5260:5371" placeholder="SELECT count..user..." />
+            <marker date="1441708536000" expanded="true" signature="5887:6002" placeholder="SELECT pseud..user..." />
+            <marker date="1441708536000" expanded="true" signature="6303:6392" placeholder="INSERT INTO ..." />
+            <marker date="1441708536000" expanded="true" signature="6635:6675" placeholder="SELECT passw..user..." />
+            <marker date="1441708536000" expanded="true" signature="6967:7407" placeholder="SELECT u.val..upgrade..." />
+            <marker date="1441708536000" expanded="true" signature="7719:7951" placeholder="SELECT u.id_..upgrade..." />
+            <marker date="1441708536000" expanded="true" signature="8210:8254" placeholder="SELECT id_la..lang..." />
+            <marker date="1441708536000" expanded="true" signature="8636:8745" placeholder="INSERT INTO ..." />
+            <marker date="1441708536000" expanded="true" signature="8863:8918" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/Password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077" vertical-offset="102" max-vertical-offset="1955">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/Farmer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6538463" vertical-offset="1399" max-vertical-offset="4420">
+          <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Class/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6538463" vertical-offset="1756" max-vertical-offset="4097">
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Block/farmer1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Block/farmer2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Block/farmer3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Block/farmer4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11371238" vertical-offset="0" max-vertical-offset="748">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>

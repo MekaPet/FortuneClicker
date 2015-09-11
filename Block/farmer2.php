@@ -6,10 +6,9 @@
 */
 
 <div class="farmer">
-    <img src="<?php echo $user->getFarmer(2) ?>" >
-    <?php
-    echo $user->getFarmer(2)->
-    var_dump($_SESSION);
-    echo $user->getFarmer(0)->getName();
-    ?>
+    <div>
+
+        <img src=<?php echo $user->getFarmer(1)->getURLforLogo();?>>
+
+    </div>
 </div>
