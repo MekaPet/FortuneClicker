@@ -1,44 +1,40 @@
 #result {
-    width: 180px;
-    height: 180px;
-    top:0px;
-    left:0px;
+    width: 205px;
+    height: 100px;
+    float:left;
 }
 
 #menu
 {
     width: 520px;
     height: 100px;
-    left: -6px;
+    float:left;
 }
 
 #upgrade
 {
     width: 280px;
     height: 100px;
-    left: -12px;
+    float:left;
 }
 
 #divers {
 
-    width: 180px;
-    height: 620px;
-    top:-2px;
-    left: 0px;
+    width: 205px;
+    height: 450px;
+    float:left;
 }
 
 #main{
     width: 520px;
-    height: 700px;
-    left: -6px;
-    top: -82px;
+    height: 450px;
+    float:left;
 }
 
 #farmer{
     width: 280px;
-    height: 700px;
-    top : -82px;
-    left: -12px;
+    height: 450px;
+    float:left;
 }
 
 .boxBorder{
@@ -51,4 +47,39 @@
 {
     position: relative;
     display: inline-block;
+}
+#gauche{
+    width:205px;
+    height: 450px;
+    float:left;
+}
+#centre{
+    width: 520px;
+    height: 450px;
+    float:left;
+}
+#droite{
+    width:205px;
+    height: 450px;
+    float:left;
+}
+#jeu{
+    width: 1080px;
+    height: 550px;
+    border: 2px black;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+#pepite{
+    width:195px;
+    margin-top:5px;
+}
+.iconFarmer{
+    float:left;
+    width:50px;
+}
+.farmer{
+    width:272px;
+    height: 70px;
+    border:solid 4px black;
 }

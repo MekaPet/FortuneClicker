@@ -19,35 +19,52 @@
     </head>
     <body>
         <div id="contener">
-            <div id="result" class="boxBorder box">
-                resultat
+            <div id="jeu">
+            <div id="gauche">
+                <div id="result" class="boxBorder box">
+                    <p>Mine Fortune <br />
+                    Nombre de pépite : <br />
+                    Nombre de pépite/s : <br />
+                    Nombre de pépite/Click : </p>
+                </div>
+
+                <div id="divers" class="boxBorder box">
+                    <img src="Media\Image\U\icon-pepite.png" id="pepite">
+                </div>
             </div>
-            <div id="menu" class="boxBorder box">
-                menu
+            <div id="centre">
+                <div id="menu" class="boxBorder box">
+                    menu
+                </div>
+                <div id="main" class="boxBorder box">
+                    page principale
+                </div>
             </div>
-            <div id="upgrade" class="boxBorder box">
-                upgrade
-            </div>
-            <div id="divers" class="boxBorder box">
-                divers
-            </div>
-            <div id="main" class="boxBorder box">
-                page principale
-            </div>
-            <div id="farmer"  class="boxBorder box">
-                <?php
+            <div id="droite">
+                <div id="upgrade" class="boxBorder box">
+                    upgrade
+                </div>
+                <div id="farmer"  class="boxBorder box">
+                    <?php
                     include 'Block/farmer1.php';
-                ?>
-                <?php
-                include 'Block/farmer2.php';
-                ?>
-                <?php
-                include 'Block/farmer3.php';
-                ?>
-                <?php
-                include 'Block/farmer4.php';
-                ?>
+                    ?>
+                    <?php
+                    include 'Block/farmer2.php';
+                    ?>
+                    <?php
+                    include 'Block/farmer3.php';
+                    ?>
+                    <?php
+                    include 'Block/farmer4.php';
+                    ?>
+                </div>
             </div>
+                </div>
+
+
+
+
+
         </div>
     </body>
 </html>
