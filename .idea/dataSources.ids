@@ -11,7 +11,6 @@
       <column name="id_effect_type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="effect" sqlType="VARCHAR" precision="5" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id_effect_type"/>
-      <exported-key name="upgrade_ibfk_1" table="upgrade" schema="" catalog="fortuneclickerv2" columns="type_effect"/>
       <index name="effect" unique="true" columns="effect"/>
     </table>
     <table name="farmer" schema="" catalog="fortuneclickerv2" type="TABLE">
@@ -20,8 +19,6 @@
       <column name="dateAdd" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
       <column name="DateUpdate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
       <primary-key name="PRIMARY" columns="id_farmer"/>
-      <exported-key name="farmer_lang_ibfk_2" table="farmer_lang" schema="" catalog="fortuneclickerv2" columns="id_Farmer"/>
-      <exported-key name="FK_farmer_farmerLevel" table="farmer_level" schema="" catalog="fortuneclickerv2" columns="id_farmer"/>
     </table>
     <table name="farmer_lang" schema="" catalog="fortuneclickerv2" type="TABLE">
       <column name="Designation" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
@@ -29,7 +26,6 @@
       <column name="id_Lang" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id_Farmer,id_Lang"/>
-      <foreign-key name="farmer_lang_ibfk_2" columns="id_Farmer" ref-table="farmer" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_farmer" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="farmer_lang_ibfk_1" columns="id_Lang" ref-table="lang" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_lang" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="farmer_level" schema="" catalog="fortuneclickerv2" type="TABLE">
@@ -39,8 +35,6 @@
       <column name="goldPerTick" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="level" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id_farmer_level"/>
-      <foreign-key name="FK_farmer_farmerLevel" columns="id_farmer" ref-table="farmer" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_farmer" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FK_farmer_farmerLevel" unique="false" columns="id_farmer"/>
     </table>
     <table name="lang" schema="" catalog="fortuneclickerv2" type="TABLE">
       <column name="id_lang" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -48,7 +42,15 @@
       <column name="shortName" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id_lang"/>
       <exported-key name="farmer_lang_ibfk_1" table="farmer_lang" schema="" catalog="fortuneclickerv2" columns="id_Lang"/>
-      <exported-key name="upgrade_lang_ibfk_1" table="upgrade_lang" schema="" catalog="fortuneclickerv2" columns="id_lang"/>
+    </table>
+    <table name="ps_access" schema="" catalog="fortuneclickerv2" type="TABLE">
+      <column name="id_profile" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="id_tab" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="view" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="add" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="edit" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="delete" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_profile,id_tab"/>
     </table>
     <table name="upgrade" schema="" catalog="fortuneclickerv2" type="TABLE">
       <column name="id_upgrade" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -57,8 +59,6 @@
       <column name="id_farmer" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="cost" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id_upgrade"/>
-      <foreign-key name="upgrade_ibfk_1" columns="type_effect" ref-table="effect_type" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_effect_type" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="upgrade_lang_ibfk_2" table="upgrade_lang" schema="" catalog="fortuneclickerv2" columns="id_upgrade"/>
     </table>
     <table name="upgrade_lang" schema="" catalog="fortuneclickerv2" type="TABLE">
       <column name="id_lang" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
@@ -66,8 +66,6 @@
       <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
       <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id_lang,id_upgrade"/>
-      <foreign-key name="upgrade_lang_ibfk_2" columns="id_upgrade" ref-table="upgrade" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_upgrade" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="upgrade_lang_ibfk_1" columns="id_lang" ref-table="lang" ref-schema="" ref-catalog="fortuneclickerv2" ref-columns="id_lang" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="user" schema="" catalog="fortuneclickerv2" type="TABLE">
       <column name="id_user" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
