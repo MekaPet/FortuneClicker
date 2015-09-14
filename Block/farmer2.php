@@ -5,6 +5,7 @@
 
     </div>
     <div class="lvlFarmer">
-        <p>LvL <?php echo $user->getFarmer(1)->getLevel(); ?></p>
+        <p>LvL <?php echo $user->getFarmer(1)->getLevel(); ?><br />
+            <?php echo $user->getFarmer(1)->getNumber() ?> Pioche</p>
     </div>
 </div>

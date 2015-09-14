@@ -75,6 +75,7 @@
     margin-top:5px;
 }
 .iconFarmer{
+    margin-left:10px;
     float:left;
     width:50px;
 }
@@ -82,4 +83,8 @@
     width:272px;
     height: 70px;
     border:solid 4px black;
+}
+.lvlFarmer{
+    float:right;
+    margin-right:5px;
 }
