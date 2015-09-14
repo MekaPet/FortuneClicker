@@ -13,6 +13,11 @@ class User
         */
     private $id;
 
+    /**
+     * numner of ressource earn by click
+     */
+    private $procPerClick;
+
     /*
      * Define if the user is authentified
      */
@@ -32,11 +37,17 @@ class User
      */
     private $upgradeList;
 
+
     /*
      * Ressources disponibles
      * Ressource avalable
      */
     private $ressourceList;
+
+    /**
+     * Tableau statistique des ressources ( ensemble des ressources depuis le debut de la parti )
+     */
+    private $ressourceListStat;
 
 
     function __construct($pseudo, $id)
@@ -60,6 +71,11 @@ class User
     {
         $this->ressourceList = $ressourceList;
     }
+
+
+    /**
+     * Ajouter ressource
+     */
 
 
     /**
@@ -140,6 +156,21 @@ class User
         {
             Database::addNewUser($mail,$pseudo,$password);
         }
+    }
+    /**
+     * @return mixed
+     */
+    public function getRessourceListStat()
+    {
+        return $this->ressourceListStat;
+    }
+
+    /**
+     * @param mixed $ressourceListStat
+     */
+    private function setRessourceListStat($ressourceListStat)
+    {
+        $this->ressourceListStat = $ressourceListStat;
     }
 
     /**
@@ -228,9 +259,35 @@ class User
             return false;
     }
 
-    function addProc($procValue)
+    /**
+     * @param $number
+     */
+    function addRessource($number)
     {
-        $this->setRessourceList($this->getRessourceList() + $procValue);
+        $this->setRessourceList($this->getRessourceList()+$number);
     }
 
+    /**
+     * @param $number
+     */
+    function removeRessource($number)
+    {
+        $this->setRessourceList($this->getRessourceList()-$number);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProcPerClick()
+    {
+        return $this->procPerClick;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function setProcPerClick($number)
+    {
+        $this->procPerClick = $number ;
+    }
 }
