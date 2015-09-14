@@ -80,6 +80,7 @@
     width:50px;
 }
 .farmer{
+    background-image:url(Media\Image\U\rubis-sauvage.png);
     width:272px;
     height: 70px;
     border:solid 4px black;

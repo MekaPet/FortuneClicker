@@ -15,4 +15,5 @@ $user->addNewFarmerToPlayer(1);
 $user->addNewFarmerToPlayer(2);
 $user->addNewFarmerToPlayer(3);
 $user->addNewFarmerToPlayer(4);
-$user->setRessourceList(0);
+
+$user->setProcPerClick(1);

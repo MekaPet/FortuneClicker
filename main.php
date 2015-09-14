@@ -7,7 +7,7 @@
  */
 
     include 'including_file.php';
-    //include 'Include/checkLog.php';
+    include 'Include/checkLog.php';
     include 'Include/header.php';
 
     include 'include/start.php';

@@ -29,7 +29,7 @@ include_once 'including_file.php';
 //var_dump(Database::getUpgrade(1));
 
 //Database::addNewUser("test","kedorev",Cryptage::encrypt("azerty"));
-//$user = User::login("test",Password::encrypt("azerty"));
+$user = User::login("kedorev@gmail.com",Password::encrypt("azerty"));
 //var_dump($user);
 //$user->addNewFarmerToPlayer(1);
 //$user->addNewFarmerToPlayer(2);
@@ -49,3 +49,5 @@ include_once 'including_file.php';
 //var_dump($_SERVER);
 //var_dump(Password::generateNew());
 
+$user->setProcPerClick(1);
+var_dump($user->getProcPerClick());
