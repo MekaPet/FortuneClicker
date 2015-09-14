@@ -23,8 +23,8 @@
             <div id="gauche">
                 <div id="result" class="boxBorder box">
                     <p>Mine Fortune <br />
-                    Nombre de pépite : <?php ?><br />
-                    Nombre de pépite/s : <?php echo $user->getRessourceList(); ?><br />
+                    Nombre de pépite : <?php echo $user->getRessourceList(); ?><br />
+                    Nombre de pépite/s : <?php echo $user->getAllProcPerInstance(); ?><br />
                     Nombre de pépite/Click : <?php ?></p>
                 </div>
 
