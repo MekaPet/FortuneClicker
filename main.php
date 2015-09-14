@@ -23,9 +23,9 @@
             <div id="gauche">
                 <div id="result" class="boxBorder box">
                     <p>Mine Fortune <br />
-                    Nombre de pépite : <br />
-                    Nombre de pépite/s : <br />
-                    Nombre de pépite/Click : </p>
+                    Nombre de pépite : <?php ?><br />
+                    Nombre de pépite/s : <?php echo $user->getRessourceList(); ?><br />
+                    Nombre de pépite/Click : <?php ?></p>
                 </div>
 
                 <div id="divers" class="boxBorder box">
