@@ -8,8 +8,21 @@
 
 include '../including_file.php';
 
-if ($_POST['Methode'] == 'clickOnPepite')
+if (isset($_POST['methode']))
 {
-    $user->addRessource($user->getProcPerClick());
-    echo $user->getRessourceList();
+    switch ($_POST['methode'])
+    {
+        case "ClickPepite":
+            $user = unserialize($_POST)
+            $user->addRessource($user->getProcPerClick());
+            echo $user->getRessourceList();
+            break;
+        case 'buy1Farmer1':
+            break;
+        case 'buy1Farmer2':
+            break;
+        case 'buy1Farmer3':
+            break;
+    }
+
 }

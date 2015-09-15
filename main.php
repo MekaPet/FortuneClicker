@@ -7,10 +7,9 @@
  */
 
     include 'including_file.php';
-    //include 'Include/checkLog.php';
+    include 'Include/checkLog.php';
     include 'Include/header.php';
 
-    include
     include 'include/start.php';
 
 
@@ -35,7 +34,7 @@
             </div>
             <div id="centre">
                 <div id="menu" class="boxBorder box">
-                    <div class="textCentre">Menu</div>
+                    Menu
                 </div>
                 <div id="main" class="boxBorder box">
 
@@ -43,19 +42,13 @@
             </div>
             <div id="droite">
                 <div id="upgrade" class="boxBorder box">
-                    <div class="textCentre">UPGRADE</div>
+                    UPGRADE
                 </div>
                 <div id="farmer"  class="boxBorder box">
                     <?php
                         include 'Block/farmer1.php';
-                    ?>
-                    <?php
                         include 'Block/farmer2.php';
-                    ?>
-                    <?php
                         include 'Block/farmer3.php';
-                    ?>
-                    <?php
                         include 'Block/farmer4.php';
                     ?>
                 </div>

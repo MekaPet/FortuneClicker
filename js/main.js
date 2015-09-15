@@ -3,7 +3,6 @@
  */
 $(document ).ready(function() {
     $("#pepite").click( clickPepite );
-    alert("page loead");
 });
 
 function clickPepite()
@@ -14,7 +13,7 @@ function clickPepite()
         },
         function (data)
         {
-            alert("pika");
+            alert(data);
             $('#PepiteDispoHTML').html(data);
         });
 }
