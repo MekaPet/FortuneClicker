@@ -13,4 +13,5 @@
     <title>Fortune clicker</title>
     <link rel="stylesheet" href="Css/global.css" />
     <script src="Js/JQuery.js" ></script>
+
     <meta charset="utf-8"/>

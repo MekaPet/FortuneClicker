@@ -10,6 +10,7 @@
     include 'Include/checkLog.php';
     include 'Include/header.php';
 
+    include
     include 'include/start.php';
 
 
