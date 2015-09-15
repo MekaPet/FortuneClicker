@@ -21,7 +21,6 @@
 }
 
 #divers {
-
     width: 205px;
     height: 450px;
     float:left;
@@ -119,5 +118,8 @@
 }
 .lvlFarmer{
     float:right;
-    margin-right:5px;
+    margin-right:14px;
+}
+.textCentre{
+    margin-top: 8px;
 }

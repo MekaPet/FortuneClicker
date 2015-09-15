@@ -30,12 +30,12 @@
                 </div>
 
                 <div id="divers" class="boxBorder box">
-                    <img src="Media\Image\U\icon-pepite.png" id="pepite">
+                    <img src="Media/Image/U/icon-pepite.png" id="pepite">
                 </div>
             </div>
             <div id="centre">
                 <div id="menu" class="boxBorder box">
-                    Menu
+                    <div class="textCentre">Menu</div>
                 </div>
                 <div id="main" class="boxBorder box">
 
@@ -43,7 +43,7 @@
             </div>
             <div id="droite">
                 <div id="upgrade" class="boxBorder box">
-                    UPGRADE
+                    <div class="textCentre">UPGRADE</div>
                 </div>
                 <div id="farmer"  class="boxBorder box">
                     <?php
