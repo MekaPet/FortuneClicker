@@ -6,8 +6,8 @@ table{
 
 #contener
 {
-    height: 1000px;
-    width:  1500px;
+    height: auto;
+    width:  auto;
     margin-left:auto;
     margin-right: auto;
     text-align: center;

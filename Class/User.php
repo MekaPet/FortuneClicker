@@ -67,7 +67,7 @@ class User
     /**
      * @param mixed $ressourceList
      */
-    private function setRessourceList($ressourceList)
+    public function setRessourceList($ressourceList)
     {
         $this->ressourceList = $ressourceList;
     }

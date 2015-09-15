@@ -1,7 +1,7 @@
 <div class="farmer">
     <div>
 
-        <img src=<?php echo $user->getFarmer(3)->getURLforLogo();?> class="iconFarmer" >
+        <img src=<?php echo $user->getFarmer(3)->getURLforLogo();?> class="iconFarmer4" >
 
     </div>
     <div class="lvlFarmer">

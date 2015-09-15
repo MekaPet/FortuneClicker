@@ -7,7 +7,7 @@
  */
 
     include 'including_file.php';
-    include 'Include/checkLog.php';
+    //include 'Include/checkLog.php';
     include 'Include/header.php';
 
     include
@@ -24,8 +24,8 @@
             <div id="gauche">
                 <div id="result" class="boxBorder box">
                     <p>Mine Fortune <br />
-                    Nombre de pépite : <?php ?><br />
-                    Nombre de pépite/s : <?php echo $user->getRessourceList(); ?><br />
+                    Nombre de pépite : <?php echo $user->getRessourceList(); ?><br />
+                    Nombre de pépite/s : <?php echo $user->getAllProcPerInstance(); ?><br />
                     Nombre de pépite/Click : <?php ?></p>
                 </div>
 
@@ -35,15 +35,15 @@
             </div>
             <div id="centre">
                 <div id="menu" class="boxBorder box">
-                    menu
+                    Menu
                 </div>
                 <div id="main" class="boxBorder box">
-                    page principale
+
                 </div>
             </div>
             <div id="droite">
                 <div id="upgrade" class="boxBorder box">
-                    upgrade
+                    UPGRADE
                 </div>
                 <div id="farmer"  class="boxBorder box">
                     <?php
