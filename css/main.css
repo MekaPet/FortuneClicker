@@ -115,5 +115,8 @@
 }
 .lvlFarmer{
     float:right;
-    margin-right:5px;
+    margin-right:14px;
+}
+.textCentre{
+    margin-top: 8px;
 }
