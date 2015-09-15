@@ -6,6 +6,8 @@
 
 #menu
 {
+    font-size: 44px;
+    font-weight: bolder;
     width: 520px;
     height: 100px;
     float:left;
@@ -39,8 +41,8 @@
 
 .boxBorder{
     border-style: double;
-    border-width: 2px;
-    border-color: #23527c;
+    border-width: 8px;
+    border-color: black;
 }
 
 .box
@@ -64,23 +66,50 @@
     float:left;
 }
 #jeu{
-    width: 1080px;
-    height: 550px;
+    background-image:url(../Media/Image/U/background.png);
+    background-size: 1021px 583px;
+    width: 1021px;
+    height: 583px;
     border: 2px black;
     margin-left: 130px;
     margin-top: 50px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
 }
 #pepite{
     width:195px;
-    margin-top:5px;
+    margin-top:80px;
 }
-.iconFarmer{
-    margin-left:10px;
-    float:left;
-    width:50px;
+.iconFarmer1{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 37px;
 }
+.iconFarmer2{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 43px;
+}
+.iconFarmer3{
+    margin-left: 10px;
+    float: left;
+    width: 55px;
+    margin-top: 10px;
+}
+.iconFarmer4{
+    margin-left: 10px;
+    float: left;
+    width: 54px;
+    margin-top: 8px;
+}
+
 .farmer{
-    background-image:url(Media\Image\U\rubis-sauvage.png);
+    background-image:url(../Media/Image/U/rubis-sauvage.png);
+    background-size:272px 70px;
     width:272px;
     height: 70px;
     border:solid 4px black;

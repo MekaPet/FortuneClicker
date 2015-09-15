@@ -7,7 +7,7 @@
  */
 
     include 'including_file.php';
-    include 'Include/checkLog.php';
+    //include 'Include/checkLog.php';
     include 'Include/header.php';
 
     include 'include/start.php';
@@ -34,15 +34,15 @@
             </div>
             <div id="centre">
                 <div id="menu" class="boxBorder box">
-                    menu
+                    Menu
                 </div>
                 <div id="main" class="boxBorder box">
-                    page principale
+
                 </div>
             </div>
             <div id="droite">
                 <div id="upgrade" class="boxBorder box">
-                    upgrade
+                    UPGRADE
                 </div>
                 <div id="farmer"  class="boxBorder box">
                     <?php
