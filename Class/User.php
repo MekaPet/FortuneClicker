@@ -265,6 +265,7 @@ class User
     function addRessource($number)
     {
         $this->setRessourceList($this->getRessourceList()+$number);
+        $this->setRessourceListStat($this->getRessourceListStat()+$number);
     }
 
     /**

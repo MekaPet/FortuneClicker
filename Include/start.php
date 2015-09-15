@@ -6,7 +6,6 @@
  * Time: 17:19
  */
 
-$xajax = new xajax();
 
 //Initialisation du joueur
 

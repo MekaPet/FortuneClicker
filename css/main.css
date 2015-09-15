@@ -50,8 +50,9 @@
     position: relative;
     display: inline-block;
 }
-#gauche{
-    width:205px;
+#gauche
+{
+    width: 205px;
     height: 450px;
     float:left;
 }
@@ -60,7 +61,8 @@
     height: 450px;
     float:left;
 }
-#droite{
+#droite
+{
     width:205px;
     height: 450px;
     float:left;
@@ -71,14 +73,15 @@
     width: 1021px;
     height: 583px;
     border: 2px black;
-    margin-left: 130px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
 
     font-size: 16px;
     font-weight: bold;
     color:white;
 }
-#pepite{
+#Pepite{
     width:195px;
     margin-top:80px;
 }
