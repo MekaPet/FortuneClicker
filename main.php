@@ -29,7 +29,7 @@
                 </div>
 
                 <div id="divers" class="boxBorder box">
-                    <img src="Media\Image\U\icon-pepite.png" id="pepite">
+                    <img src="Media/Image/U/icon-pepite.png" id="pepite">
                 </div>
             </div>
             <div id="centre">
