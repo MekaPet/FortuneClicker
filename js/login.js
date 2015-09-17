@@ -21,7 +21,6 @@ function login()
         }
         else
         {
-            alert(data);
             alert ("L'identifiant et le mot de passe ne concorde pas.")
         }
 
@@ -39,7 +38,6 @@ function newAccount()
                 mail: $("#EmailRegistration").val()
             },
             function (data) {
-                alert(data);
                 if(data == 1)
                 {
                     alert("Votre compte a ete cree avec succes");
