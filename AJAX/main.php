@@ -34,10 +34,28 @@ if (isset($_POST['methode']))
             {
                 echo -1;
             }
+            /*if (buyOneFarmer(0) != -1)
+            {
+                echo json_encode($return);
+            }*/
             break;
         case 'buy1Farmer2':
+            if (buyOneFarmer(1) != -1)
+            {
+                echo ($return);
+            }
             break;
         case 'buy1Farmer3':
+            if (buyOneFarmer(2) != -1)
+            {
+                echo ($return);
+            }
+            break;
+        case 'buy1Farmer4':
+            if (buyOneFarmer(3) != -1)
+            {
+                echo ($return);
+            }
             break;
         case 'ressourcePerSeconde':
             $user = unserialize($_SESSION['user']);
@@ -49,4 +67,22 @@ if (isset($_POST['methode']))
 
     }
 
+}
+
+function buyOneFarmer($i){
+    $user = unserialize($_SESSION['user']);
+    if ($user->getRessourceList() >= $user->getFarmer($i)->getCost())
+    {
+        $user->getFarmer($i)->addFarmer(1);
+        $user->setRessourceList($user->getRessourceList()-$user->getFarmer($i)->getCost());
+        $_SESSION['user'] = serialize($user);
+        $return['number'] = $user->getFarmer($i)->getNumber();
+        $return['ressourceAvailable'] = $user->getRessourceList();
+        $return['peptiteParSeconde'] = $user->getAllProcPerInstance();
+        return $return;
+    }
+    else
+    {
+        return -1;
+    }
 }

@@ -2,6 +2,7 @@
     width: 205px;
     height: 100px;
     float:left;
+    font-size: 11px;
 }
 
 #menu
@@ -119,6 +120,7 @@
 .lvlFarmer{
     float:right;
     margin-right:14px;
+    font-size: 10px;
 }
 .textCentre{
     margin-top: 8px;
