@@ -27,6 +27,7 @@ if(isset($_POST['mail']))
         {
 
             $_SESSION['user'] = serialize($user);
+            $_SESSION['isInitialize'] = false;
             echo 1;
         }
     }

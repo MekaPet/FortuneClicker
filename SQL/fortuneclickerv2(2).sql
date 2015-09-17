@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 10 Septembre 2015 à 16:57
+-- Généré le :  Mer 16 Septembre 2015 à 13:09
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -53,15 +53,16 @@ CREATE TABLE IF NOT EXISTS `farmer` (
   `dateAdd` date NOT NULL,
   `DateUpdate` date NOT NULL,
   PRIMARY KEY (`id_farmer`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `farmer`
 --
 
 INSERT INTO `farmer` (`id_farmer`, `id_media`, `dateAdd`, `DateUpdate`) VALUES
-(1, NULL, '0000-00-00', '0000-00-00'),
-(2, NULL, '0000-00-00', '0000-00-00'),
+(1, NULL, '2015-09-10', '2015-09-10'),
+(2, NULL, '2015-09-10', '2015-09-10'),
+(3, NULL, '2015-09-10', '2015-09-10'),
 (4, NULL, '2015-09-08', '2015-09-08');
 
 -- --------------------------------------------------------
@@ -84,7 +85,10 @@ CREATE TABLE IF NOT EXISTS `farmer_lang` (
 --
 
 INSERT INTO `farmer_lang` (`Designation`, `id_Farmer`, `id_Lang`, `Name`) VALUES
-('auto-click  ', 1, 1, 'main');
+('auto-click  ', 1, 1, 'click'),
+('Permet de piocher', 2, 1, 'pioche'),
+('Employer de mine    ', 3, 1, 'mineur'),
+('Nouvelle méthode de minage', 4, 1, 'mine');
 
 -- --------------------------------------------------------
 
@@ -100,7 +104,18 @@ CREATE TABLE IF NOT EXISTS `farmer_level` (
   `level` int(11) NOT NULL,
   PRIMARY KEY (`id_farmer_level`),
   KEY `FK_farmer_farmerLevel` (`id_farmer`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Contenu de la table `farmer_level`
+--
+
+INSERT INTO `farmer_level` (`id_farmer_level`, `id_farmer`, `cost`, `goldPerTick`, `level`) VALUES
+(7, 1, 10, 1, 1),
+(8, 1, 20, 2, 2),
+(9, 2, 25, 3, 1),
+(10, 3, 50, 8, 1),
+(11, 4, 100, 20, 1);
 
 -- --------------------------------------------------------
 
@@ -164,6 +179,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `pseudo` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
+  `save` text NOT NULL,
   PRIMARY KEY (`id_user`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
@@ -171,9 +187,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Contenu de la table `user`
 --
 
-INSERT INTO `user` (`id_user`, `pseudo`, `password`, `mail`) VALUES
-(8, 'kedorev', ',,9u/f0OQtwJY', 'kedorev@gmail.com'),
-(13, 'moi', ',,9u/f0OQtwJY', 'zer@ryt3.de');
+INSERT INTO `user` (`id_user`, `pseudo`, `password`, `mail`, `save`) VALUES
+(8, 'kedorev', ',,9u/f0OQtwJY', 'kedorev@gmail.com', ''),
+(13, 'moi', ',,9u/f0OQtwJY', 'zer@ryt3.de', '');
 
 --
 -- Contraintes pour les tables exportées

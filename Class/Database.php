@@ -332,8 +332,23 @@ class Database
         {
 
             $requeteTraduction = $pdo->prepare('INSERT INTO farmer_lang (Designation, Name) VALUE (?,?)');
-            var_dump($requeteTraduction);
+            //var_dump($requeteTraduction);
             $requeteTraduction->execute(array($designation,$name));
         }
+    }
+
+    /**
+     * @param $idUser
+     * @param $save
+     * A modifier pour enregistrer dans un fichier de configuration
+     * en developpement
+     */
+    static function save($idUser,$save)
+    {
+        $pdo = Database::getPDO();
+        $requete = $pdo->prepare("update 'user'  set (save) VALUE (".$save.") WHERE id_user = ?");
+
+        $result = $requete->execute(array($idUser));
+        var_dump($result);
     }
 }

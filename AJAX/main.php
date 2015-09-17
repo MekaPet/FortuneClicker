@@ -13,16 +13,40 @@ if (isset($_POST['methode']))
     switch ($_POST['methode'])
     {
         case "ClickPepite":
-            $user = unserialize($_POST)
+            $user = unserialize($_SESSION['user']);
             $user->addRessource($user->getProcPerClick());
+            $_SESSION['user'] = serialize($user);
             echo $user->getRessourceList();
             break;
-        case 'buy1Farmer1':
+        case 'buyFarmer1':
+            $user = unserialize($_SESSION['user']);
+            if ($user->getRessourceList() >= $user->getFarmer(0)->getCost())
+            {
+                $user->getFarmer(0)->addFarmer(1);
+                $user->setRessourceList($user->getRessourceList()-$user->getFarmer(0)->getCost());
+                $_SESSION['user'] = serialize($user);
+                $return['number'] = $user->getFarmer(0)->getNumber();
+                $return['ressourceAvailable'] = $user->getRessourceList();
+                $return['peptiteParSeconde'] = $user->getAllProcPerInstance();
+                echo json_encode($return);
+            }
+            else
+            {
+                echo -1;
+            }
             break;
         case 'buy1Farmer2':
             break;
         case 'buy1Farmer3':
             break;
+        case 'ressourcePerSeconde':
+            $user = unserialize($_SESSION['user']);
+            $user->addRessource($user->getAllProcPerInstance());
+            $_SESSION['user'] = serialize($user);
+            echo $user->getRessourceList() ;
+            break;
+        case 'save':
+
     }
 
 }

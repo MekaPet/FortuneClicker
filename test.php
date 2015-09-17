@@ -50,4 +50,4 @@ $user = User::login("kedorev@gmail.com",Password::encrypt("azerty"));
 //var_dump(Password::generateNew());
 
 $user->setProcPerClick(1);
-var_dump($user->getProcPerClick());
+Database::save($user->getId(), serialize($user));
